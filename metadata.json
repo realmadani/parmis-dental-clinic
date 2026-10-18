@@ -1,0 +1,6 @@
+{
+  "name": "کلینیک دندان‌پزشکی پارمیس",
+  "description": "وب‌سایت رسمی و مدرن کلینیک دندان‌پزشکی پارمیس - دکتر انوشیروان شمسپور در پاکدشت (مجتمع پزشکی راستین)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
