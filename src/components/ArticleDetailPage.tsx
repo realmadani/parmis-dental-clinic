@@ -87,7 +87,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
     setCommentName('');
     setCommentPhone('');
     setCommentMessage('');
-    showToast('پرسش شما با موفقیت ثبت شد و پس از بررسی توسط دکتر شمس‌پور منتشر خواهد شد');
+    showToast('پرسش شما با موفقیت ثبت شد و پس از بررسی توسط دکتر شمس پور منتشر خواهد شد');
   };
 
   const scrollToSection = (sectionId: string) => {
@@ -189,7 +189,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#eceef0] text-[#434655] text-xs font-semibold rounded-full">
               <span className="material-symbols-outlined text-sm">verified</span>
-              <span>تأییدیه علمی دکتر شمس‌پور</span>
+              <span>تأییدیه علمی دکتر شمس پور</span>
             </span>
             <span className="inline-flex items-center gap-1 px-2.5 py-1 text-[#565e74] text-xs font-medium">
               <span className="material-symbols-outlined text-sm">location_on</span>
@@ -324,7 +324,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
                 تکنولوژی دیجیتال لبخند در پاکدشت
               </span>
               <p className="text-xs sm:text-sm text-slate-100 max-w-2xl leading-relaxed">
-                مقایسه تخصصی متریال‌های لومینیرز، ایمکس، و نانوکامپوزیت‌های ژاپنی و سوئیسی تحت نظر مستقیم دکتر شمس‌پور
+                مقایسه تخصصی متریال‌های لومینیرز، ایمکس، و نانوکامپوزیت‌های ژاپنی و سوئیسی تحت نظر مستقیم دکتر شمس پور
               </p>
             </div>
             <div className="flex items-center gap-1.5 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 text-[11px] font-medium self-start sm:self-auto shrink-0">
@@ -521,7 +521,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
               <div className="flex items-center gap-3 mb-3">
                 <span className="material-symbols-outlined text-[#004ac6] text-2xl">medical_services</span>
                 <span className="text-sm font-bold text-[#004ac6]">
-                  دیدگاه بالینی دکتر انوشیروان شمس‌پور
+                  دیدگاه بالینی دکتر انوشیروان شمس پور
                 </span>
               </div>
               <blockquote className="text-sm sm:text-base text-[#191c1e] font-semibold leading-relaxed mb-4 text-justify">
@@ -592,7 +592,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
                     </div>
                     <div className="text-[11px] text-[#565e74] border-t border-[#c3c6d7]/30 pt-2 flex items-center gap-1">
                       <span className="material-symbols-outlined text-sm text-emerald-600">check</span>
-                      <span>انجام شده توسط دکتر انوشیروان شمس‌پور</span>
+                      <span>انجام شده توسط دکتر انوشیروان شمس پور</span>
                     </div>
                   </div>
                 </div>
@@ -806,7 +806,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
                   </button>
                   {openFaqIndex === 2 && (
                     <div className="pt-3 text-xs sm:text-sm text-[#565e74] leading-relaxed border-t border-[#c3c6d7]/20 mt-3">
-                      یکی از بزرگ‌ترین مزیت‌های ونیر کامپوزیت قابلیت ترمیم‌پذیری آسان آن است. در صورتی که بر اثر گاز زدن جسم سخت لب‌پریدگی رخ دهد، دکتر شمس‌پور در یک جلسه کوتاه ۱۵ دقیقه‌ای بدون نیاز به تعویض کل ونیر، همان بخش را با مواد همرنگ ترمیم و پولیش می‌کنند.
+                      یکی از بزرگ‌ترین مزیت‌های ونیر کامپوزیت قابلیت ترمیم‌پذیری آسان آن است. در صورتی که بر اثر گاز زدن جسم سخت لب‌پریدگی رخ دهد، دکتر شمس پور در یک جلسه کوتاه ۱۵ دقیقه‌ای بدون نیاز به تعویض کل ونیر، همان بخش را با مواد همرنگ ترمیم و پولیش می‌کنند.
                     </div>
                   )}
                 </div>
@@ -845,7 +845,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
                   <span>دیدگاه‌ها و پرسش‌های بیماران ({18 + submittedComments.length} نظر)</span>
                 </h2>
                 <span className="text-xs text-[#004ac6] font-bold bg-[#dbe1ff]/60 px-3 py-1 rounded-full">
-                  پاسخ‌گویی مستقیم توسط دکتر شمس‌پور
+                  پاسخ‌گویی مستقیم توسط دکتر شمس پور
                 </span>
               </div>
 
@@ -855,7 +855,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
                 className="bg-[#f2f4f6] p-4 sm:p-5 rounded-2xl border border-[#c3c6d7]/30 mb-8"
               >
                 <h3 className="font-bold text-[#191c1e] text-xs sm:text-sm mb-1.5">
-                  طرح سوال از دکتر انوشیروان شمس‌پور درباره طرح لبخند
+                  طرح سوال از دکتر انوشیروان شمس پور درباره طرح لبخند
                 </h3>
                 <p className="text-xs text-[#565e74] mb-4">
                   می‌توانید شرایط دندانی خود را بنویسید تا روش درمانی مناسب به شما پیشنهاد شود.
@@ -952,7 +952,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
                       </div>
                       <div>
                         <span className="font-bold text-[#004ac6] text-xs sm:text-sm">
-                          پاسخ دکتر انوشیروان شمس‌پور
+                          پاسخ دکتر انوشیروان شمس پور
                         </span>
                         <span className="text-[10px] text-[#565e74] mr-2">جراح و دندان‌پزشک</span>
                       </div>
@@ -1107,7 +1107,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
                 </span>
               </div>
               <h3 className="text-base sm:text-lg font-bold mb-2">
-                مشاوره حضوری طرح لبخند با دکتر شمس‌پور
+                مشاوره حضوری طرح لبخند با دکتر شمس پور
               </h3>
               <p className="text-xs text-blue-100 mb-5 leading-relaxed">
                 معاینه و آنالیز رایگان قوس لبخند در کلینیک پارمیس (پاکدشت، مجتمع پزشکی راستین).
@@ -1280,7 +1280,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
               آماده لبخندی بی‌نقص و مطمئن هستید؟
             </h2>
             <p className="text-xs sm:text-base text-[#565e74] leading-relaxed mb-4">
-              برای معاینه بالینی، ارزیابی ضخامت مینای دندان و دریافت برآورد شفاف هزینه‌ها، همین امروز با کلینیک پارمیس (دکتر انوشیروان شمس‌پور) تماس بگیرید یا نوبت حضوری خود را در پاکدشت هماهنگ نمایید.
+              برای معاینه بالینی، ارزیابی ضخامت مینای دندان و دریافت برآورد شفاف هزینه‌ها، همین امروز با کلینیک پارمیس (دکتر انوشیروان شمس پور) تماس بگیرید یا نوبت حضوری خود را در پاکدشت هماهنگ نمایید.
             </p>
             <div className="flex items-center gap-4 text-xs text-[#434655] flex-wrap">
               <div className="flex items-center gap-1.5">

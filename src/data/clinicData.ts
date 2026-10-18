@@ -61,8 +61,8 @@ export interface FaqItem {
 export const CLINIC_INFO = {
   name: 'دندان‌پزشکی پارمیس',
   fullName: 'کلینیک دندان‌پزشکی پارمیس',
-  doctorTitleBrand: 'دندان‌پزشکی دکتر انوشیروان شمسپور',
-  doctorName: 'دکتر انوشیروان شمسپور',
+  doctorTitleBrand: 'دندان‌پزشکی دکتر انوشیروان شمس پور',
+  doctorName: 'دکتر انوشیروان شمس پور',
   doctorRole: 'مسئول فنی و سرپرست درمان کلینیک پارمیس',
   phone: '02136048581',
   phone2: '02136048582',
@@ -117,7 +117,7 @@ export const VALUE_PROPOSITIONS = [
     title: 'کادر مجرب و حرفه‌ای',
     mobileTitle: 'مهارت و تخصص بالا',
     desc: 'بهره‌مندی از تجارب ارزشمند و مهارت بالا',
-    mobileDesc: 'تجربه گسترده دکتر شمسپور در جراحی‌های پیچیده و ایمپلنت.',
+    mobileDesc: 'تجربه گسترده دکتر شمس پور در جراحی‌های پیچیده و ایمپلنت.',
   },
   {
     icon: 'devices',
@@ -434,7 +434,7 @@ export const ARTICLES: ArticleItem[] = [
     mobileTitle:
       'راهنمای جامع تفاوت ونیر کامپوزیت و لمینت سرامیکی؛ کدام یک برای شما مناسب‌تر است؟',
     summary:
-      'اصلاح طرح لبخند یکی از حساس‌ترین درمان‌های دندان‌پزشکی نوین است. در این بررسی بالینی تخصصی، دکتر انوشیروان شمس‌پور تفاوت‌های ساختاری، میزان تراش دندان، استحکام، طول عمر، هزینه و موارد کاربرد کامپوزیت‌های سرامیکی در برابر لمینت‌های کاد-کم را برای بیماران در پاکدشت به تفصیل شرح می‌دهد.',
+      'اصلاح طرح لبخند یکی از حساس‌ترین درمان‌های دندان‌پزشکی نوین است. در این بررسی بالینی تخصصی، دکتر انوشیروان شمس پور تفاوت‌های ساختاری، میزان تراش دندان، استحکام، طول عمر، هزینه و موارد کاربرد کامپوزیت‌های سرامیکی در برابر لمینت‌های کاد-کم را برای بیماران در پاکدشت به تفصیل شرح می‌دهد.',
     mobileSummary:
       'بررسی دقیق تفاوت در تراش دندان، ماندگاری و استحکام، هزینه تمام شده، و جلوه طبیعی هر روش جهت تصمیم‌گیری هوشمندانه در کلینیک پارمیس پاکدشت.',
     image:
@@ -443,7 +443,7 @@ export const ARTICLES: ArticleItem[] = [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuD0dV3PCPYR1lxTu7JJ-viZy6qxlXyBMiq22eIbl54e08_KljywloHoeJPZUYsfPAlPqGLFumudh5BiCW3U9xKs6k8RR1wDwuF3idNbd8VPDt6ohR1oeZDaoTr_C3MXoGfMu20alvdiXyL7SiU41r6XO9FZpvVhcgxN50aGC8Qaem-yBb9XH1qqpXVWaVlkYQ5xj3vQIWdEzXl9shij5yWOmNjBdD6nyoVIWZMbkBC1-trSXNiAwxJD',
     readTime: '۷ دقیقه مطالعه',
     date: '۱۵ اردیبهشت ۱۴۰۳',
-    author: 'دکتر انوشیروان شمس‌پور',
+    author: 'دکتر انوشیروان شمس پور',
     authorRole: 'عضو انجمن دندان‌پزشکان ایران • جراح و دندان‌پزشک مجتمع راستین',
     tags: ['کامپوزیت_ونیر', 'لمینت_سرامیکی', 'اصلاح_طرح_لبخند'],
     isFeatured: true,
@@ -474,7 +474,7 @@ export const ARTICLES: ArticleItem[] = [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuD6g-KCHzA0ozV3Jo2XFnwRhQoI2dFT4tiDvzbSBlTVsMUOPoffVZsD6MeYCGNtnlDnhISuEyA--JTQFiwH8av4iWVc3vJ-JVXWWHv3HZ4ke55JQQfkv_rmyFjWR-OcPdMefmEJuna0nq3LE90YuEgh9E5tOLyH7AMN6JjRTqcGIXvAqfe4x5-KqMp7AsvcxMmLEweC8f8kjFezLv-Tm2YsLrj-bsQuTH6Q21A6uNR-3ZFckpb5Gd3g',
     readTime: '۴ دقیقه مطالعه',
     date: '۲ اردیبهشت ۱۴۰۳',
-    author: 'دکتر انوشیروان شمس‌پور',
+    author: 'دکتر انوشیروان شمس پور',
     authorRole: 'سرپرست درمان کلینیک پارمیس',
     tags: ['ایمپلنت_دندان', 'مراقبت_جراحی', 'جایگزینی_دندان'],
     content: [
@@ -506,7 +506,7 @@ export const ARTICLES: ArticleItem[] = [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuBOIr1S4GQ7RJsDRV0zgF-TvPw90tbErPa4nH6izsbSjhu5wDv79iklW5IYQ758tTddjoTDNvgnYiyAX_DWof9HgE7y3aT6teezFndRrHZd3fBGEhA7NbOLfDQ3haVXnJ5NyirniuNIPCsg8KbjaevxsFO4JtgDz8IxHMXvlgJGV23XXKTuVP0yRvxf9UD_Ws9Fsn_eCrs6bUBGcmzIi7D1f45ketI5aZtZUsLYTr28xDOKT_l0D0uO',
     readTime: '۵ دقیقه مطالعه',
     date: '۲۸ فروردین ۱۴۰۳',
-    author: 'دکتر انوشیروان شمس‌پور',
+    author: 'دکتر انوشیروان شمس پور',
     authorRole: 'جراح - دندان‌پزشک',
     tags: ['عصب‌کشی_بدون_درد', 'روتاری_دیجیتال', 'درمان_ریشه'],
     content: [
@@ -564,7 +564,7 @@ export const ARTICLES: ArticleItem[] = [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuBTpcvjbcdPyt5IhzzecW5NgV7XyqbUbVaG7ztwLybK0X_diUxJ3szae0fBKZLmkkCRP8oeItq-m4CCItbyCoPjWX-nz-U0tKsV-pvv2POQJC8OdhJck2BkOh7MS92aw-8a-uWgxLr18rQ2DzfgdfJ6WS1rCIbYn5wVDGP2EHmE4B6yVcI_quNwSrU-rNwKcWkB-lJ4L1cZVn1AHCs2EMmZ2SLcxGu8Jq7jZPfiYLn8T2MPFQiz4cDf',
     readTime: '۵ دقیقه مطالعه',
     date: '۱۵ فروردین ۱۴۰۳',
-    author: 'دکتر انوشیروان شمس‌پور',
+    author: 'دکتر انوشیروان شمس پور',
     authorRole: 'جراح - دندان‌پزشک',
     tags: ['دندان‌پزشکی_کودکان', 'ارتودنسی', 'سلامت_فک'],
     content: [
@@ -625,7 +625,7 @@ export const ARTICLES: ArticleItem[] = [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuBzm476byTv2gQzRhKrjVm4uC9_nd-nzXSeDCd3RSocJevwTap24Bc5JpHmcz7MVMTC2yOVqFW6jBM4J8Qqyvqmi0nYGRsdo5aN_7Wh3gPr2V4r4QFxGtXmcncRzD-6zZshxTMviOBoLWiq1_ETAFYcBQP7SjB4opGVONZohGzEomewLrrf81fDv9Os3sliQ2Dz6Gu7918447Z3OeYlbl9CXqrjMHhvYwuLF_cC2gkHNn_mvXkbHQ9g',
     readTime: '۵ دقیقه مطالعه',
     date: '۲۵ اسفند ۱۴۰۲',
-    author: 'دکتر انوشیروان شمس‌پور',
+    author: 'دکتر انوشیروان شمس پور',
     authorRole: 'جراح - دندان‌پزشک',
     tags: ['جرم‌گیری', 'بهداشت_دهان', 'عفونت_لثه'],
     content: [
@@ -686,7 +686,7 @@ export const ARTICLES: ArticleItem[] = [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuBzm476byTv2gQzRhKrjVm4uC9_nd-nzXSeDCd3RSocJevwTap24Bc5JpHmcz7MVMTC2yOVqFW6jBM4J8Qqyvqmi0nYGRsdo5aN_7Wh3gPr2V4r4QFxGtXmcncRzD-6zZshxTMviOBoLWiq1_ETAFYcBQP7SjB4opGVONZohGzEomewLrrf81fDv9Os3sliQ2Dz6Gu7918447Z3OeYlbl9CXqrjMHhvYwuLF_cC2gkHNn_mvXkbHQ9g',
     readTime: '۶ دقیقه مطالعه',
     date: '۵ اسفند ۱۴۰۲',
-    author: 'دکتر انوشیروان شمس‌پور',
+    author: 'دکتر انوشیروان شمس پور',
     authorRole: 'جراح - دندان‌پزشک',
     tags: ['تحلیل_لثه', 'جراحی_پریودنتال', 'پیشگیری'],
     content: [
@@ -712,7 +712,7 @@ export const FAQS: FaqItem[] = [
     id: 'faq-2',
     question: 'آیا درمان‌های دندان‌پزشکی همراه با درد انجام می‌شوند؟',
     answer:
-      'خیر، با بهره‌گیری از داروهای بی‌حسی موضعی باکیفیت و متدهای تزریق تدریجی و آرام توسط دکتر انوشیروان شمسپور، درمان‌ها به شیوه‌ای کاملاً کنترل‌شده و با حداقل احساس ناخوشایند انجام خواهند شد.',
+      'خیر، با بهره‌گیری از داروهای بی‌حسی موضعی باکیفیت و متدهای تزریق تدریجی و آرام توسط دکتر انوشیروان شمس پور، درمان‌ها به شیوه‌ای کاملاً کنترل‌شده و با حداقل احساس ناخوشایند انجام خواهند شد.',
   },
   {
     id: 'faq-3',
@@ -724,7 +724,7 @@ export const FAQS: FaqItem[] = [
     id: 'faq-4',
     question: 'وضعیت صدور فاکتور برای بیمه‌های تکمیلی چگونه است؟',
     answer:
-      'پس از انجام درمان، گواهی معتبر با مهر نظام پزشکی دکتر انوشیروان شمسپور به همراه شرح دقیق خدمات جهت دریافت هزینه از کلیه شرکت‌های بیمه تکمیلی به مراجعین ارائه می‌گردد.',
+      'پس از انجام درمان، گواهی معتبر با مهر نظام پزشکی دکتر انوشیروان شمس پور به همراه شرح دقیق خدمات جهت دریافت هزینه از کلیه شرکت‌های بیمه تکمیلی به مراجعین ارائه می‌گردد.',
   },
 ];
 
@@ -733,13 +733,13 @@ export const MOBILE_FAQS: FaqItem[] = [
     id: 'm-faq-1',
     question: 'آیا معاینه و ویزیت اولیه در کلینیک پارمیس رایگان است؟',
     answer:
-      'بله، ویزیت اولیه و بررسی تشخیصی طرح درمان توسط دکتر انوشیروان شمسپور به همراه برآورد کامل هزینه‌ها در اولین جلسه با هماهنگی تلفنی قبلی انجام می‌گردد.',
+      'بله، ویزیت اولیه و بررسی تشخیصی طرح درمان توسط دکتر انوشیروان شمس پور به همراه برآورد کامل هزینه‌ها در اولین جلسه با هماهنگی تلفنی قبلی انجام می‌گردد.',
   },
   {
     id: 'm-faq-2',
     question: 'آیا با بیمه‌های تکمیلی و درمانی همکاری دارید؟',
     answer:
-      'فاکتور رسمی معتبر همراه با شرح دقیق درمان‌ها و مهر نظام‌پزشکی دکتر انوشیروان شمسپور صادر می‌شود تا بتوانید کل هزینه‌ها را از کلیه بیمه‌های تکمیلی دریافت فرمایید.',
+      'فاکتور رسمی معتبر همراه با شرح دقیق درمان‌ها و مهر نظام‌پزشکی دکتر انوشیروان شمس پور صادر می‌شود تا بتوانید کل هزینه‌ها را از کلیه بیمه‌های تکمیلی دریافت فرمایید.',
   },
   {
     id: 'm-faq-3',

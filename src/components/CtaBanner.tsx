@@ -17,7 +17,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = () => {
           </div>
           <h2 className="text-xl font-bold mb-1.5">آماده شروع تحول لبخندتان هستید؟</h2>
           <p className="text-sm text-white/90 mb-4 max-w-xs mx-auto">
-            برای مشاوره تخصصی و رزرو اولین نوبت همین حالا با دکتر شمسپور تماس بگیرید.
+            برای مشاوره تخصصی و رزرو اولین نوبت همین حالا با دکتر شمس پور تماس بگیرید.
           </p>
           <a
             href={`tel:${CLINIC_INFO.phone2}`}

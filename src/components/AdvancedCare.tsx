@@ -174,7 +174,7 @@ export const AdvancedCare: React.FC<AdvancedCareProps> = () => {
                 className="inline-flex items-center gap-2 bg-[#004ac6] hover:bg-[#00569c] text-white px-6 py-3 rounded-full text-sm font-bold transition-colors shadow"
               >
                 <span className="material-symbols-outlined text-[20px]">call</span>
-                <span>مشاوره با دکتر انوشیروان شمسپور</span>
+                <span>مشاوره با دکتر انوشیروان شمس پور</span>
               </a>
             </div>
           </div>

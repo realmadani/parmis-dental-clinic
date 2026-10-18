@@ -35,7 +35,7 @@ export const SmileTransformations: React.FC<SmileTransformationsProps> = ({
             نمونه درمان‌های انجام شده
           </h2>
           <p className="text-sm text-[#434655] mt-1">
-            تغییرات واقعی لبخند مراجعین کلینیک دکتر شمسپور
+            تغییرات واقعی لبخند مراجعین کلینیک دکتر شمس پور
           </p>
         </div>
 

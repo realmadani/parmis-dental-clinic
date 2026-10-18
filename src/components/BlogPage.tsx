@@ -140,7 +140,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({
             </h1>
             <p className="text-sm sm:text-base text-[#565e74] leading-relaxed">
               راهنماها، مقالات علمی به زبان ساده و نکات مراقبتی تالیف و بازبینی شده توسط{' '}
-              <strong className="text-[#004ac6] font-bold">دکتر انوشیروان شمس‌پور</strong> جهت
+              <strong className="text-[#004ac6] font-bold">دکتر انوشیروان شمس پور</strong> جهت
               ارتقای آگاهی سلامت همشهریان در پاکدشت
             </p>
           </div>
@@ -273,7 +273,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({
                   <span className="material-symbols-fill material-symbols-outlined text-sm text-amber-500">
                     star
                   </span>
-                  <span>مقاله منتخب سردبیر / توصیه دکتر شمس‌پور</span>
+                  <span>مقاله منتخب سردبیر / توصیه دکتر شمس پور</span>
                 </div>
 
                 <div className="absolute bottom-3 left-3 bg-[#191c1e]/80 backdrop-blur-md text-white text-[11px] font-medium px-3 py-1 rounded-full flex items-center gap-1 lg:hidden">
@@ -534,7 +534,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({
 
                   <div className="px-5 pb-5 pt-3 border-t border-[#c3c6d7]/20 flex items-center justify-between text-xs">
                     <span className="text-[#565e74] font-medium truncate max-w-[170px]">
-                      {article.author || 'دکتر انوشیروان شمس‌پور'}
+                      {article.author || 'دکتر انوشیروان شمس پور'}
                     </span>
                     <span className="text-[#004ac6] font-bold flex items-center gap-1 group-hover:gap-1.5 transition-all">
                       <span>ادامه مطلب</span>
@@ -634,7 +634,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({
                 نکات سلامتی هفتگی و تخفیف چکاپ دوره‌ای
               </h2>
               <p className="text-xs sm:text-sm text-white/90 leading-relaxed max-w-xl">
-                با ثبت شماره تماس خود، جدیدترین مقالات مراقبتی دکتر شمس‌پور و کد تخفیف ویژه ویزیت و
+                با ثبت شماره تماس خود، جدیدترین مقالات مراقبتی دکتر شمس پور و کد تخفیف ویژه ویزیت و
                 عکس‌برداری اولیه را در تلفن همراه خود دریافت نمایید.
               </p>
             </div>

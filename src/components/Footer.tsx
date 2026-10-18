@@ -67,7 +67,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectPage }) => {
         </div>
 
         <p className="text-sm text-[#eff1f3]/60 border-t border-[#c3c6d7]/20 pt-4 w-full">
-          © کلیه حقوق مادی و معنوی متعلق به کلینیک دندان‌پزشکی دکتر انوشیروان شمسپور می‌باشد.
+          © کلیه حقوق مادی و معنوی متعلق به کلینیک دندان‌پزشکی دکتر انوشیروان شمس پور می‌باشد.
         </p>
       </div>
 
@@ -83,7 +83,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectPage }) => {
               <span>{CLINIC_INFO.name}</span>
             </div>
             <p className="text-sm text-[#c3c6d7] leading-relaxed">
-              کلینیک تخصصی دندان‌پزشکی دکتر انوشیروان شمسپور؛ ارائه کلیه خدمات ایمپلنت، زیبایی،
+              کلینیک تخصصی دندان‌پزشکی دکتر انوشیروان شمس پور؛ ارائه کلیه خدمات ایمپلنت، زیبایی،
               ارتودنسی و درمان ریشه با بالاترین استانداردهای استریلیزاسیون در پاکدشت.
             </p>
           </div>
@@ -132,7 +132,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectPage }) => {
                   onClick={(e) => handleLink(e, 'about')}
                   className="text-[#c3c6d7] hover:text-[#eff1f3] transition-colors text-sm"
                 >
-                  درباره دکتر شمسپور
+                  درباره دکتر شمس پور
                 </a>
               </li>
               <li>
@@ -198,7 +198,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectPage }) => {
         {/* Copyright Row */}
         <div className="flex items-center justify-between text-sm text-[#c3c6d7] gap-4">
           <p>
-            تمامی حقوق محفوظ است © کلینیک تخصصی دندان‌پزشکی پارمیس • دکتر انوشیروان شمسپور | پاکدشت،
+            تمامی حقوق محفوظ است © کلینیک تخصصی دندان‌پزشکی پارمیس • دکتر انوشیروان شمس پور | پاکدشت،
             مجتمع پزشکی راستین
           </p>
           <span className="text-xs text-[#b4c5ff] font-medium">سالم و درخشان بخندید</span>

@@ -298,7 +298,7 @@ const TESTIMONIALS = [
     name: 'آقای بهرام شریفی',
     location: 'از قیام‌دشت • کاشت ۳ واحد ایمپلنت اشترومن',
     duration: '۰۱:۴۵ دقیقه',
-    quote: '«بدون درد و خونریزی جراحی شد. حتی یک قرص مسکن هم بعد جراحی نیاز نداشتم. پیگیری‌های بعد از جراحی پرسنل دکتر شمس‌پور واقعاً ستودنی بود.»',
+    quote: '«بدون درد و خونریزی جراحی شد. حتی یک قرص مسکن هم بعد جراحی نیاز نداشتم. پیگیری‌های بعد از جراحی پرسنل دکتر شمس پور واقعاً ستودنی بود.»',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB-vtFpkkgpG_BNePdiQjnPGCI66VeehG493AfLCpA_kYC5YYuK9dwnMTExDqa1JdoXUY2_lRPfZNmAJrsNkoOAwpl2AFWOdCYjmMjHZsAr4Aex79ANEsOW-QacVZXu6P8PPqQjbD2_ucAXuM84yP8w0jYxEsypWrF71_ddrchsTGQsC9UwK-SiIz6cS9JlTkKVZ9CG3RVcNkXBR2nVJtMezT74CktyZslsjhmG703SP0UfM7Ki2VDe',
   },
   {
@@ -350,7 +350,7 @@ export const SmileGalleryPage: React.FC<SmileGalleryPageProps> = ({
 
               {/* Subtitle */}
               <p className="text-sm sm:text-base text-[#565e74] leading-relaxed max-w-2xl text-justify">
-                هر لبخند یک شاهکار پزشکی منحصربه‌فرد است. تمامی نمونه‌های زیر بدون فیلتر و روتوش فتوشاپ، توسط دکتر انوشیروان شمس‌پور با پیشرفته‌ترین تکنولوژی‌های اسکن سه‌بعدی و متریال درجه‌یک سوییسی و آلمانی درمان شده‌اند. می‌توانید لغزنده را به چپ و راست بکشید تا نتیجه تغییر را با جزئیات مقایسه کنید.
+                هر لبخند یک شاهکار پزشکی منحصربه‌فرد است. تمامی نمونه‌های زیر بدون فیلتر و روتوش فتوشاپ، توسط دکتر انوشیروان شمس پور با پیشرفته‌ترین تکنولوژی‌های اسکن سه‌بعدی و متریال درجه‌یک سوییسی و آلمانی درمان شده‌اند. می‌توانید لغزنده را به چپ و راست بکشید تا نتیجه تغییر را با جزئیات مقایسه کنید.
               </p>
 
               {/* Call to Actions */}
@@ -402,7 +402,7 @@ export const SmileGalleryPage: React.FC<SmileGalleryPageProps> = ({
                   <div className="relative rounded-2xl overflow-hidden h-72 sm:h-84 bg-[#eceef0]">
                     <img
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9IOcy7S7dxAxm2-5P261mSvnBAVLG3Om-maCCHtYzBuz6leLuV1PwxstWlzPV6LGJ0a9rflTBfsIMTSkAmvumYhJMOY5sivlEikShJmpXCxb_8H0lvjjGGaOGb7pBOsqSDHFlyaw663RSwJGTbMlkrP8JimiQsUEKKScYZXRJq4D9sA464cBAnmjMYoem9blqoEJY4xPEHvxTOCdMcTEoZB1-axAi-d6NCPp_d3HrbbOhEadoMD_M"
-                      alt="اصلاح طرح لبخند دکتر شمس‌پور پاکدشت"
+                      alt="اصلاح طرح لبخند دکتر شمس پور پاکدشت"
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute bottom-3 inset-x-3 bg-[#191c1e]/85 backdrop-blur-md text-white p-3 rounded-xl flex items-center justify-between shadow-lg">
@@ -419,7 +419,7 @@ export const SmileGalleryPage: React.FC<SmileGalleryPageProps> = ({
                   <div className="mt-3.5 flex items-center justify-between px-2 text-xs text-[#565e74]">
                     <div className="flex items-center gap-2">
                       <span className="material-symbols-outlined text-[#004ac6] text-lg">verified</span>
-                      <span className="font-bold text-[#191c1e]">دکتر انوشیروان شمس‌پور</span>
+                      <span className="font-bold text-[#191c1e]">دکتر انوشیروان شمس پور</span>
                     </div>
                     <span className="text-[11px]">عضو انجمن دندانپزشکان ترمیمی ایران</span>
                   </div>
@@ -594,7 +594,7 @@ export const SmileGalleryPage: React.FC<SmileGalleryPageProps> = ({
                     healing
                   </span>
                   <div>
-                    <h4 className="text-xs sm:text-sm font-bold text-[#191c1e]">پلن درمانی دکتر شمس‌پور:</h4>
+                    <h4 className="text-xs sm:text-sm font-bold text-[#191c1e]">پلن درمانی دکتر شمس پور:</h4>
                     <p className="text-xs text-[#565e74] mt-0.5 leading-relaxed">
                       طراحی لبخند دیجیتال (DSD)، جراحی افزایش طول تاج ملایم با لیزر دیود و لمینت سرامیکی پرسلن E-Max آلمانی.
                     </p>
@@ -864,7 +864,7 @@ export const SmileGalleryPage: React.FC<SmileGalleryPageProps> = ({
                   تعهد شفافیت: بدون روتوش، بدون خطای دید
                 </h2>
                 <p className="text-xs sm:text-sm text-[#565e74] leading-relaxed text-justify">
-                  ما باور داریم که اعتماد بیماران ارزشمندترین دارایی ماست. به همین دلیل در ثبت تصاویر نمونه کارهای مطب دکتر شمس‌پور به ۴ اصل سخت‌گیرانه پایبندیم.
+                  ما باور داریم که اعتماد بیماران ارزشمندترین دارایی ماست. به همین دلیل در ثبت تصاویر نمونه کارهای مطب دکتر شمس پور به ۴ اصل سخت‌گیرانه پایبندیم.
                 </p>
               </div>
 
@@ -1004,7 +1004,7 @@ export const SmileGalleryPage: React.FC<SmileGalleryPageProps> = ({
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-right">
           <div className="text-center mb-8 sm:mb-12 space-y-2">
             <span className="text-[#004ac6] font-bold text-xs sm:text-sm bg-[#004ac6]/10 px-3.5 py-1 rounded-full">
-              پاسخ‌های دکتر انوشیروان شمس‌پور به سوالات شما
+              پاسخ‌های دکتر انوشیروان شمس پور به سوالات شما
             </span>
             <h2 className="text-xl sm:text-3xl font-extrabold text-[#191c1e]">
               پرسش‌های پرتکرار مراجعین
@@ -1020,7 +1020,7 @@ export const SmileGalleryPage: React.FC<SmileGalleryPageProps> = ({
                 </span>
               </summary>
               <p className="text-xs text-[#565e74] mt-3 pt-3 border-t border-[#c3c6d7]/20 leading-relaxed text-justify">
-                بله، صد درصد تصاویر و ویدیوهای بارگذاری شده در این وب‌سایت، پرونده‌های بالینی واقعی بیماران تحت درمان دکتر انوشیروان شمس‌پور در مطب پاکدشت (مجتمع راستین) است و مراجعین محترم در جلسه مشاوره حضوری می‌توانند آلبوم جامع این درمان‌ها را مشاهده فرمایند.
+                بله، صد درصد تصاویر و ویدیوهای بارگذاری شده در این وب‌سایت، پرونده‌های بالینی واقعی بیماران تحت درمان دکتر انوشیروان شمس پور در مطب پاکدشت (مجتمع راستین) است و مراجعین محترم در جلسه مشاوره حضوری می‌توانند آلبوم جامع این درمان‌ها را مشاهده فرمایند.
               </p>
             </details>
 
@@ -1080,7 +1080,7 @@ export const SmileGalleryPage: React.FC<SmileGalleryPageProps> = ({
                 آماده‌اید لبخند رویایی خود را تجربه کنید؟
               </h2>
               <p className="text-xs sm:text-sm text-white/90 leading-relaxed">
-                یک جلسه مشاوره و تصویربرداری تشخیصی در کلینیک پارمیس با دکتر انوشیروان شمس‌پور رزرو کنید و طرح لبخند ایده‌آل خود را قبل از درمان بر روی مانیتور ببینید.
+                یک جلسه مشاوره و تصویربرداری تشخیصی در کلینیک پارمیس با دکتر انوشیروان شمس پور رزرو کنید و طرح لبخند ایده‌آل خود را قبل از درمان بر روی مانیتور ببینید.
               </p>
             </div>
 

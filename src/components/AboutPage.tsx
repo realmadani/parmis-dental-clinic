@@ -31,7 +31,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
           {/* Doctor Portrait Container */}
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md mb-4 bg-[#eceef0]">
             <img
-              alt="دکتر انوشیروان شمس‌پور - کلینیک دندانپزشکی پارمیس پاکدشت"
+              alt="دکتر انوشیروان شمس پور - کلینیک دندانپزشکی پارمیس پاکدشت"
               className="w-full h-full object-cover object-top"
               src={CLINIC_INFO.doctorImage}
             />
@@ -47,7 +47,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
 
           {/* Headline & Introduction */}
           <h1 className="text-[1.75rem] leading-[1.3] font-bold text-[#191c1e] mb-2 tracking-tight">
-            دکتر انوشیروان شمس‌پور
+            دکتر انوشیروان شمس پور
           </h1>
           <p className="text-sm font-bold text-[#004ac6] mb-3">
             تعهد به سلامت دهان و آفرینش لبخند طبیعی در پاکدشت
@@ -140,7 +140,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                   حفظ حداکثری دندان طبیعی (Biomimetic)
                 </h3>
                 <p className="text-sm text-[#565e74] leading-relaxed">
-                  هیچ جایگزینی معادل دندان طبیعی خود فرد نیست. تمام تلاش علمی دکتر شمس‌پور نجات ریشه
+                  هیچ جایگزینی معادل دندان طبیعی خود فرد نیست. تمام تلاش علمی دکتر شمس پور نجات ریشه
                   و تاج با ترمیم‌های نوین است.
                 </p>
               </div>
@@ -287,7 +287,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
             <div className="min-w-[82%] sm:min-w-[70%] snap-center-child bg-white rounded-[2rem] overflow-hidden border border-[#c3c6d7]/20 shadow-xs flex flex-col">
               <div className="h-44 w-full bg-[#eceef0] relative">
                 <img
-                  alt="اتاق درمان و یونیت دندانپزشکی دکتر شمسپور"
+                  alt="اتاق درمان و یونیت دندانپزشکی دکتر شمس پور"
                   className="w-full h-full object-cover"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQHnM4JJDLmy0AGxwkcUI6Ph0rZyZpoqBLMMPE4MZYf_bVIaPQ6W6zU-Xmw_0F1p94O8r2go-flLLpGH9kuiPYDPwVzVtoPKiAlpapJWB0I0c89Zludn9oMVPjE1rUWzEgNYv-daZpjlEn28N41H9jMBhikgRLY6WLJ_V3dCh6byWHHDVJfTvfE1QPNpyfEBGeqsLHMxWTrYqO1qUhiWFgfZQAVPQAw3EBmPfxcr0VofMl1fzYC2CD"
                 />
@@ -328,7 +328,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
         {/* 5. SERVICES SUMMARY (Under Dr. Shamspoor's Direct Supervision) */}
         <section className="space-y-3">
           <div className="flex items-center justify-between">
-            <h2 className="text-xl font-bold text-[#191c1e]">خدمات تحت نظارت دکتر شمس‌پور</h2>
+            <h2 className="text-xl font-bold text-[#191c1e]">خدمات تحت نظارت دکتر شمس پور</h2>
             <span className="text-xs font-semibold text-[#565e74]">مجتمع راستین</span>
           </div>
 
@@ -448,7 +448,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 <div className="flex text-amber-400 text-xs">★★★★★</div>
               </div>
               <p className="text-sm text-[#565e74] leading-relaxed">
-                «من سال‌ها از دندان‌پزشکی وحشت داشتم، اما صبوری و اخلاق حرفه‌ای دکتر شمس‌پور واقعاً
+                «من سال‌ها از دندان‌پزشکی وحشت داشتم، اما صبوری و اخلاق حرفه‌ای دکتر شمس پور واقعاً
                 فوق‌العاده بود. برای درمان دندان عصب‌کشی و روکش حتی سرسوزنی درد حس نکردم. محیط
                 کلینیک هم فوق‌العاده تمیز و باکلاسه.»
               </p>
@@ -577,7 +577,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
           <div className="absolute -bottom-10 -right-10 w-36 h-36 bg-white/10 rounded-full blur-xl pointer-events-none" />
           <h3 className="text-xl font-bold mb-2">رزرو وقت معاینه و مشاوره حضوری</h3>
           <p className="text-sm opacity-90 mb-4 leading-relaxed">
-            جهت هماهنگی سریع‌ترین زمان ویزیت توسط دکتر انوشیروان شمس‌پور، می‌توانید مستقیماً با تلفن
+            جهت هماهنگی سریع‌ترین زمان ویزیت توسط دکتر انوشیروان شمس پور، می‌توانید مستقیماً با تلفن
             مطب تماس حاصل فرمایید یا درخواست خود را ثبت کنید.
           </p>
           <div className="flex flex-col gap-2">
@@ -612,7 +612,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
 
                 {/* Main Hero Headline */}
                 <h1 className="text-[2.25rem] lg:text-[3.5rem] text-[#191c1e] leading-[1.15] font-extrabold">
-                  دکتر انوشیروان شمس‌پور
+                  دکتر انوشیروان شمس پور
                   <span className="block text-[#004ac6] mt-1 text-[2.25rem] leading-[1.25] font-bold">
                     تعهد به سلامت دهان و آفرینش لبخند طبیعی در پاکدشت
                   </span>
@@ -690,13 +690,13 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                   {/* Doctor Main Image */}
                   <div className="relative overflow-hidden rounded-2xl aspect-[4/5] bg-[#f2f4f6]">
                     <img
-                      alt="دکتر انوشیروان شمس‌پور"
+                      alt="دکتر انوشیروان شمس پور"
                       className="w-full h-full object-cover"
                       src={CLINIC_INFO.doctorImage}
                     />
                     {/* Subtle bottom gradient */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#191c1e]/70 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-                      <span className="text-xl font-bold">دکتر انوشیروان شمس‌پور</span>
+                      <span className="text-xl font-bold">دکتر انوشیروان شمس پور</span>
                       <span className="text-sm text-[#eeefff] opacity-90">
                         موسس و سرپرست درمان مطب پارمیس پاکدشت
                       </span>
@@ -800,7 +800,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 فلسفه پزشکی و طبابت اخلاق‌مدار
               </span>
               <h2 className="text-[2.25rem] leading-[1.25] text-[#191c1e] font-extrabold mb-4">
-                نگاه دکتر شمس‌پور به درمان دندان‌پزشکی: بازسازی طبیعی، نه فقط درمان مقطعی
+                نگاه دکتر شمس پور به درمان دندان‌پزشکی: بازسازی طبیعی، نه فقط درمان مقطعی
               </h2>
               <p className="text-base text-[#565e74]">
                 در مطب دندان‌پزشکی پارمیس، درمان دندان یک فرآیند استرس‌زا نیست؛ بلکه بازگرداندن
@@ -821,14 +821,14 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                   </div>
 
                   <p className="text-base text-[#434655] leading-relaxed">
-                    دکتر انوشیروان شمس‌پور پس از فارغ‌التحصیلی و اتمام دوره‌های تکمیلی، با هدفی روشن
+                    دکتر انوشیروان شمس پور پس از فارغ‌التحصیلی و اتمام دوره‌های تکمیلی، با هدفی روشن
                     فعالیت تخصصی خود را در پاکدشت پایه‌گذاری نمود: ارتقای سطح سلامت دهان و دندان در
                     منطقه و دسترسی آسان همشهریان عزیز به خدمات دندان‌پزشکی مدرن، دقیق و با بالاترین
                     استانداردهای مراقبتی روز کشور.
                   </p>
 
                   <p className="text-base text-[#434655] leading-relaxed">
-                    باور عمیق دکتر شمس‌پور بر رویکرد{' '}
+                    باور عمیق دکتر شمس پور بر رویکرد{' '}
                     <span className="font-bold text-[#004ac6]">
                       «دندان‌پزشکی محافظه‌کارانه و بیومیمتیک (حداقل مداخله)»
                     </span>{' '}
@@ -1048,7 +1048,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                   طیف خدمات بالینی
                 </span>
                 <h2 className="text-[2.25rem] leading-[1.25] font-extrabold text-[#191c1e]">
-                  خدمات درمانی و زیبایی زیر نظر دکتر شمس‌پور
+                  خدمات درمانی و زیبایی زیر نظر دکتر شمس پور
                 </h2>
               </div>
               <p className="text-base text-[#565e74] max-w-md mt-4 md:mt-0">
@@ -1223,7 +1223,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               </h2>
               <p className="text-base text-[#565e74]">
                 نظرات ثبت‌شده بیماران محترم درباره برخورد حرفه‌ای و درمان‌های دکتر انوشیروان
-                شمس‌پور.
+                شمس پور.
               </p>
             </div>
 
@@ -1249,7 +1249,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                     </span>
                   </div>
                   <p className="text-base text-[#434655] leading-relaxed mb-6">
-                    «همیشه از آمپول بی‌حسی دندان‌پزشکی وحشت داشتم، اما دکتر شمس‌پور آن‌قدر باحوصله و
+                    «همیشه از آمپول بی‌حسی دندان‌پزشکی وحشت داشتم، اما دکتر شمس پور آن‌قدر باحوصله و
                     ماهرانه تزریق را انجام دادند که هیچ دردی حس نکردم. عصب‌کشی دندان آسیاب من بسیار
                     تمیز انجام شد.»
                   </p>
@@ -1353,7 +1353,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                     اطلاعات دسترسی و نوبت‌دهی
                   </span>
                   <h3 className="text-2xl font-extrabold text-[#191c1e] mb-6">
-                    مطب دندان‌پزشکی پارمیس • دکتر انوشیروان شمس‌پور
+                    مطب دندان‌پزشکی پارمیس • دکتر انوشیروان شمس پور
                   </h3>
 
                   <div className="space-y-6">
@@ -1501,7 +1501,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 </h3>
                 <p className="text-base text-[#eeefff] max-w-xl">
                   جهت رزرو نوبت معاینه، اطلاع از طرح‌های درمان یا دریافت مشاوره با کادر مطب دکتر
-                  شمس‌پور تماس بگیرید.
+                  شمس پور تماس بگیرید.
                 </p>
               </div>
 

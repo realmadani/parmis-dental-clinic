@@ -50,7 +50,7 @@ export const ArticlesSection: React.FC<ArticlesSectionProps> = ({
             </h2>
             <p className="text-sm sm:text-base text-[#565e74] max-w-2xl">
               جدیدترین مقالات علمی و نکات مراقبتی تالیف و بازبینی‌شده توسط{' '}
-              <strong className="text-[#004ac6] font-bold">دکتر انوشیروان شمس‌پور</strong>
+              <strong className="text-[#004ac6] font-bold">دکتر انوشیروان شمس پور</strong>
             </p>
           </div>
 
@@ -154,7 +154,7 @@ export const ArticlesSection: React.FC<ArticlesSectionProps> = ({
                 {/* Footer of Card */}
                 <div className="px-5 sm:px-6 pb-5 pt-3 border-t border-[#c3c6d7]/20 flex items-center justify-between text-xs mt-auto">
                   <span className="text-[#565e74] font-medium truncate max-w-[170px]">
-                    {article.author || 'دکتر انوشیروان شمس‌پور'}
+                    {article.author || 'دکتر انوشیروان شمس پور'}
                   </span>
                   <span className="text-[#004ac6] font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
                     <span>مطالعه مقاله</span>

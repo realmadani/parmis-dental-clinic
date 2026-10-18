@@ -104,10 +104,10 @@ export const Navbar: React.FC<NavbarProps> = ({
               </div>
               <div className="flex flex-col text-right min-w-0 flex-1">
                 <span className="text-xs sm:text-sm font-bold text-[#004ac6] leading-tight truncate">
-                  {CLINIC_INFO.doctorTitleBrand}
+                  کلینیک دندانپزشکی پارمیس
                 </span>
-                <span className="text-[10px] text-[#434655] font-medium truncate">
-                  کلینیک تخصصی پارمیس • پاکدشت
+                <span className="text-[10px] text-[#565e74] font-semibold truncate">
+                  دکتر انوشیروان شمس پور
                 </span>
               </div>
             </div>
@@ -117,20 +117,25 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* ================= DESKTOP HEADER (>= md) - Exact Home Page Header ================= */}
         <div className="hidden md:flex w-full max-w-7xl mx-auto px-6 items-center justify-between py-3">
-          {/* Brand Logo */}
+          {/* Brand Logo & Subtitle */}
           <button
             type="button"
             onClick={() => handleNavClick('home')}
-            className="text-xl font-bold text-[#004ac6] flex items-center gap-2 group cursor-pointer"
+            className="text-right flex items-center gap-3 group cursor-pointer"
           >
-            <span className="w-10 h-10 rounded-full bg-[#dbe1ff] flex items-center justify-center text-[#004ac6] group-hover:scale-105 transition-transform">
+            <span className="w-11 h-11 rounded-full bg-[#dbe1ff] flex items-center justify-center text-[#004ac6] group-hover:scale-105 transition-transform shrink-0">
               <span className="material-symbols-fill material-symbols-outlined text-[24px]">
                 dentistry
               </span>
             </span>
-            <span className="tracking-tight text-[#004ac6] font-bold">
-              {CLINIC_INFO.name}
-            </span>
+            <div className="flex flex-col text-right">
+              <span className="text-base font-extrabold text-[#004ac6] tracking-tight">
+                کلینیک دندانپزشکی پارمیس
+              </span>
+              <span className="text-xs text-[#565e74] font-semibold">
+                دکتر انوشیروان شمس پور
+              </span>
+            </div>
           </button>
 
           {/* Desktop Navigation Links */}
@@ -180,7 +185,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   : 'text-[#565e74] hover:text-[#004ac6] font-semibold'
               }`}
             >
-              درباره دکتر شمسپور
+              درباره دکتر شمس پور
             </button>
 
             <button
@@ -290,15 +295,12 @@ export const Navbar: React.FC<NavbarProps> = ({
                   />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <h3 className="text-base font-bold text-[#004ac6] truncate">
-                    {CLINIC_INFO.name}
+                  <h3 className="text-sm sm:text-base font-bold text-[#004ac6] truncate">
+                    کلینیک دندانپزشکی پارمیس
                   </h3>
-                  <p className="text-xs text-[#191c1e] font-semibold truncate">
-                    {CLINIC_INFO.doctorName}
+                  <p className="text-xs text-[#565e74] font-semibold truncate">
+                    دکتر انوشیروان شمس پور
                   </p>
-                  <span className="text-[11px] text-[#434655] block mt-0.5 truncate">
-                    پاکدشت، مجتمع پزشکی راستین
-                  </span>
                 </div>
               </div>
               <button
@@ -387,7 +389,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 >
                   badge
                 </span>
-                <span className="text-xs truncate">درباره دکتر شمسپور</span>
+                <span className="text-xs truncate">درباره دکتر شمس پور</span>
               </button>
 
               <button

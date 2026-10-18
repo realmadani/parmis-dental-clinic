@@ -138,7 +138,7 @@ export default function App() {
           <ServicesSection onOpenBooking={(sId) => handleOpenBooking(sId)} />
 
           <DentalEyeGuideDivider
-            label="آشنایی با دکتر انوشیروان شمسپور"
+            label="آشنایی با دکتر انوشیروان شمس پور"
             icon="verified_user"
           />
 

@@ -25,7 +25,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
   const mobileFaqs = [
     {
       q: 'آیا درمان ونیر کامپوزیت باعث تراش دندان می‌شود؟',
-      a: 'خیر، در روش ونیر کامپوزیت مدرن در کلینیک دکتر شمسپور، در ۹۰ درصد موارد هیچ‌گونه تراش یا آسیب به مینای طبیعی دندان وارد نمی‌شود و کار به‌صورت محافظه‌کارانه انجام می‌پذیرد.',
+      a: 'خیر، در روش ونیر کامپوزیت مدرن در کلینیک دکتر شمس پور، در ۹۰ درصد موارد هیچ‌گونه تراش یا آسیب به مینای طبیعی دندان وارد نمی‌شود و کار به‌صورت محافظه‌کارانه انجام می‌پذیرد.',
     },
     {
       q: 'شرایط پرداخت هزینه ایمپلنت و خدمات زیبایی چیست؟',
@@ -44,7 +44,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
     },
     {
       q: 'آیا درمان‌های دندان‌پزشکی در کلینیک پارمیس با درد همراه است؟',
-      a: 'خیر؛ در کلینیک دکتر شمسپور از بی‌حسی‌های مدرن با pH خنثی و سوزن‌های فوق‌العاده نازک استفاده می‌شود تا ورود مایع بی‌حسی نیز احساس نشود. برای بیماران با استرس بالا، تکنیک‌های آرام‌بخشی روانشناختی و بی‌حسی مرحله‌ای انجام می‌گیرد.',
+      a: 'خیر؛ در کلینیک دکتر شمس پور از بی‌حسی‌های مدرن با pH خنثی و سوزن‌های فوق‌العاده نازک استفاده می‌شود تا ورود مایع بی‌حسی نیز احساس نشود. برای بیماران با استرس بالا، تکنیک‌های آرام‌بخشی روانشناختی و بی‌حسی مرحله‌ای انجام می‌گیرد.',
     },
     {
       q: 'شرایط پرداخت هزینه و تعرفه‌های خدمات در پاکدشت چگونه است؟',
@@ -73,7 +73,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
             خدمات تخصصی درمان و <span className="text-[#2563eb]">اصلاح طرح لبخند</span>
           </h1>
           <p className="text-base text-[#434655] leading-relaxed mb-4">
-            ارائه پیشرفته‌ترین خدمات دندانپزشکی در پاکدشت توسط دکتر انوشیروان شمس‌پور با دستگاه‌های
+            ارائه پیشرفته‌ترین خدمات دندانپزشکی در پاکدشت توسط دکتر انوشیروان شمس پور با دستگاه‌های
             مدرن، بدون استرس و درد.
           </p>
 
@@ -605,7 +605,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
                 <div>
                   <h4 className="text-sm font-bold text-[#191c1e]">اجرای درمان بدون درد</h4>
                   <p className="text-[#434655] text-xs">
-                    انجام مراحل کار توسط دکتر شمس‌پور با بی‌حسی کامل و تجهیزات استریل یکبار مصرف.
+                    انجام مراحل کار توسط دکتر شمس پور با بی‌حسی کامل و تجهیزات استریل یکبار مصرف.
                   </p>
                 </div>
               </div>
@@ -631,11 +631,11 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
             <div className="flex items-center gap-3">
               <img
                 className="w-20 h-20 rounded-full object-cover border-2 border-[#2563eb] shadow-xs"
-                alt="دکتر انوشیروان شمس‌پور"
+                alt="دکتر انوشیروان شمس پور"
                 src={CLINIC_INFO.doctorImage}
               />
               <div className="flex flex-col">
-                <h3 className="text-xl font-bold text-[#191c1e]">دکتر انوشیروان شمس‌پور</h3>
+                <h3 className="text-xl font-bold text-[#191c1e]">دکتر انوشیروان شمس پور</h3>
                 <span className="text-sm text-[#004ac6] font-semibold">جراح - دندانپزشک</span>
                 <span className="text-xs text-[#565e74]">عضو سازمان نظام پزشکی کشور</span>
               </div>
@@ -708,7 +708,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
               </h3>
             </div>
             <p className="text-sm text-[#434655] mb-3">
-              پاکدشت، مجتمع پزشکی راستین، طبقه دندانپزشکی پارمیس (دکتر انوشیروان شمسپور)
+              پاکدشت، مجتمع پزشکی راستین، طبقه دندانپزشکی پارمیس (دکتر انوشیروان شمس پور)
             </p>
 
             {/* Simulated Map / Location Preview */}
@@ -767,7 +767,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
             <div className="flex justify-center mb-6">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#004ac6]/10 text-[#004ac6] border border-[#004ac6]/20 text-sm font-bold">
                 <span className="material-symbols-outlined text-lg">verified</span>
-                <span>مجتمع پزشکی راستین • پاکدشت | تحت نظارت دکتر انوشیروان شمسپور</span>
+                <span>مجتمع پزشکی راستین • پاکدشت | تحت نظارت دکتر انوشیروان شمس پور</span>
               </div>
             </div>
 
@@ -932,7 +932,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
                 </h2>
                 <p className="text-base text-[#565e74] mt-2 max-w-2xl">
                   اصلاح فرم، رنگ، قرینگی و فواصل دندان‌ها با کمترین تهاجم به بافت طبیعی دندان زیر
-                  نظر مستقیم دکتر انوشیروان شمسپور
+                  نظر مستقیم دکتر انوشیروان شمس پور
                 </p>
               </div>
               <div className="mt-4 md:mt-0">
@@ -1425,7 +1425,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
                   </h2>
                   <p className="text-[1.125rem] text-[#565e74] leading-relaxed mb-6">
                     با استفاده از سیستم‌های ایمپلنت معتبر سوییسی (اشترومن، اس‌آی‌سی) و کره‌ای مرغوب
-                    تحت نظر دکتر شمسپور، دندان از دست رفته خود را بدون درد، با حداقل خونریزی و با
+                    تحت نظر دکتر شمس پور، دندان از دست رفته خود را بدون درد، با حداقل خونریزی و با
                     بالاترین درصد موفقیت پیوند استخوانی جایگزین کنید.
                   </p>
 
@@ -1537,7 +1537,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
                 </div>
                 <h3 className="text-xl font-bold text-[#191c1e] mb-2">معاینه و ارزیابی دیجیتال</h3>
                 <p className="text-sm text-[#565e74] leading-relaxed">
-                  بررسی دقیق بالینی توسط دکتر شمسپور همراه با عکس‌برداری دیجیتال داخل‌دهانی، ثبت
+                  بررسی دقیق بالینی توسط دکتر شمس پور همراه با عکس‌برداری دیجیتال داخل‌دهانی، ثبت
                   تاریخچه دندانی و بررسی سلامت عمومی بافت‌ها.
                 </p>
               </div>
@@ -1600,7 +1600,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
               </div>
               <div className="mt-4 md:mt-0">
                 <span className="text-xs font-semibold text-[#565e74] bg-[#f2f4f6] px-4 py-2 rounded-full">
-                  تمامی موارد توسط دکتر انوشیروان شمسپور درمان شده‌اند
+                  تمامی موارد توسط دکتر انوشیروان شمس پور درمان شده‌اند
                 </span>
               </div>
             </div>
@@ -1750,7 +1750,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
                   لبخندی بی‌نقص، سالم و درخشان را با اطمینان تجربه کنید
                 </h2>
                 <p className="text-[1.125rem] opacity-90 leading-relaxed">
-                  جهت مشاوره تلفنی رایگان با تیم تخصصی دکتر انوشیروان شمسپور و رزرو وقت ویزیت،
+                  جهت مشاوره تلفنی رایگان با تیم تخصصی دکتر انوشیروان شمس پور و رزرو وقت ویزیت،
                   هم‌اکنون با ما در تماس باشید.
                 </p>
               </div>
