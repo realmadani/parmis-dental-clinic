@@ -73,7 +73,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = () => {
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
-            {SERVICES.map((service) => (
+            {SERVICES.map((service, idx) => (
               <div
                 key={service.id}
                 className="dental-card-interactive bg-white p-8 rounded-3xl border border-[#c3c6d7]/30 shadow-xs hover:-translate-y-1.5 hover:border-[#004ac6]/35 hover:shadow-lg transition-all duration-300 flex flex-col justify-between text-right group"
@@ -95,10 +95,12 @@ export const ServicesSection: React.FC<ServicesSectionProps> = () => {
                 </div>
 
                 <a
-                  href={`tel:${CLINIC_INFO.phone}`}
+                  href={`tel:${idx % 2 === 0 ? CLINIC_INFO.phone : CLINIC_INFO.phone2}`}
                   className="inline-flex items-center gap-2 text-[#004ac6] font-bold text-sm hover:underline mt-auto"
                 >
-                  <span>مشاوره و وقت ویزیت: {CLINIC_INFO.phoneCompact}</span>
+                  <span>
+                    مشاوره و وقت ویزیت: {idx % 2 === 0 ? CLINIC_INFO.phoneCompact : CLINIC_INFO.phoneCompact2}
+                  </span>
                   <span className="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">
                     arrow_back
                   </span>

@@ -3,9 +3,12 @@ import { TRANSFORMATIONS, CLINIC_INFO } from '../data/clinicData.ts';
 
 interface SmileTransformationsProps {
   onOpenBooking: () => void;
+  onNavigateGallery?: () => void;
 }
 
-export const SmileTransformations: React.FC<SmileTransformationsProps> = () => {
+export const SmileTransformations: React.FC<SmileTransformationsProps> = ({
+  onNavigateGallery,
+}) => {
   const getIconForCase = (id: string) => {
     switch (id) {
       case 'bleaching':
@@ -73,13 +76,24 @@ export const SmileTransformations: React.FC<SmileTransformationsProps> = () => {
         </div>
 
         <div className="mt-4 text-center">
-          <a
-            href={`tel:${CLINIC_INFO.phone}`}
-            className="inline-flex items-center gap-1.5 text-[#004ac6] text-sm font-bold hover:underline"
-          >
-            <span>مشاهده تمامی موارد و مشاوره حضوری در پاکدشت</span>
-            <span className="material-symbols-outlined text-sm">arrow_left</span>
-          </a>
+          {onNavigateGallery ? (
+            <button
+              type="button"
+              onClick={onNavigateGallery}
+              className="inline-flex items-center gap-1.5 text-[#004ac6] text-sm font-bold hover:underline cursor-pointer"
+            >
+              <span>مشاهده گالری کامل نمونه درمان‌ها و لبخند</span>
+              <span className="material-symbols-outlined text-sm rotate-180">arrow_back</span>
+            </button>
+          ) : (
+            <a
+              href={`tel:${CLINIC_INFO.phone}`}
+              className="inline-flex items-center gap-1.5 text-[#004ac6] text-sm font-bold hover:underline"
+            >
+              <span>مشاهده تمامی موارد و مشاوره حضوری در پاکدشت</span>
+              <span className="material-symbols-outlined text-sm">arrow_left</span>
+            </a>
+          )}
         </div>
       </div>
 
@@ -99,13 +113,24 @@ export const SmileTransformations: React.FC<SmileTransformationsProps> = () => {
               </p>
             </div>
 
-            <a
-              href={`tel:${CLINIC_INFO.phone}`}
-              className="mt-4 md:mt-0 inline-flex items-center gap-2 border border-[#004ac6] text-[#004ac6] px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#dbe1ff]/20 transition-colors"
-            >
-              <span>دریافت نوبت معاینه و ویزیت لبخند</span>
-              <span className="material-symbols-outlined text-[18px]">arrow_back</span>
-            </a>
+            {onNavigateGallery ? (
+              <button
+                type="button"
+                onClick={onNavigateGallery}
+                className="mt-4 md:mt-0 inline-flex items-center gap-2 bg-[#004ac6] text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#003ea8] transition-all cursor-pointer shadow-sm active:scale-95"
+              >
+                <span>مشاهده گالری کامل و مقایسه قبل و بعد</span>
+                <span className="material-symbols-outlined text-[18px] rotate-180">arrow_back</span>
+              </button>
+            ) : (
+              <a
+                href={`tel:${CLINIC_INFO.phone}`}
+                className="mt-4 md:mt-0 inline-flex items-center gap-2 border border-[#004ac6] text-[#004ac6] px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#dbe1ff]/20 transition-colors"
+              >
+                <span>دریافت نوبت معاینه و ویزیت لبخند</span>
+                <span className="material-symbols-outlined text-[18px]">arrow_back</span>
+              </a>
+            )}
           </div>
 
           <div className="grid grid-cols-3 gap-6">

@@ -96,14 +96,15 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               <span className="material-symbols-outlined text-lg">call</span>
               <span>تماس: {CLINIC_INFO.phoneCompact}</span>
             </a>
-            <button
-              type="button"
-              onClick={() => onOpenBooking()}
-              className="flex items-center justify-center gap-1.5 bg-[#dae2fd] text-[#131b2e] py-3 px-4 rounded-full text-xs font-bold border border-[#c3c6d7]/40 active:scale-95 transition-all cursor-pointer"
+            <a
+              href="https://wa.me/989120802253"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-1.5 bg-[#dae2fd] text-[#131b2e] py-3 px-4 rounded-full text-xs font-bold border border-[#c3c6d7]/40 active:scale-95 transition-all"
             >
-              <span className="material-symbols-outlined text-lg">calendar_add_on</span>
-              <span>درخواست نوبت</span>
-            </button>
+              <span className="material-symbols-outlined text-lg">chat</span>
+              <span>مشاوره واتساپ</span>
+            </a>
           </div>
         </section>
 
@@ -500,8 +501,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 pin_drop
               </span>
               <span>
-                <strong>آدرس:</strong> استان تهران، پاکدشت، بلوار شهدای قمی، نرسیده به میدان ساعت،
-                مجتمع پزشکی راستین، طبقه دوم، واحد دندانپزشکی پارمیس
+                <strong>آدرس:</strong> پاکدشت، بلوار شهدای قمی، میدان علی ابن ابیطالب، ابتدای بلوار علی ابن ابیطالب، مجتمع پزشکی راستین، طبقه دوم، کلینیک دندان‌پزشکی پارمیس
               </span>
             </div>
 
@@ -519,10 +519,15 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 <span className="material-symbols-outlined text-[#004ac6] shrink-0 text-lg">
                   phone_in_talk
                 </span>
-                <span>
-                  <strong>تلفن مستقیم:</strong>{' '}
-                  <span className="font-bold text-[#004ac6]">{CLINIC_INFO.phoneDisplay}</span>
-                </span>
+                <div>
+                  <strong className="block mb-0.5">تلفن مستقیم:</strong>
+                  <a href="tel:02136048581" className="block font-bold text-[#004ac6] dir-ltr text-right">
+                    ۰۲۱۳۶۰۴۸۵۸۱
+                  </a>
+                  <a href="tel:02136048582" className="block font-bold text-[#004ac6] dir-ltr text-right">
+                    ۰۲۱۳۶۰۴۸۵۸۲
+                  </a>
+                </div>
               </div>
               <a
                 href={`tel:${CLINIC_INFO.phone}`}
@@ -543,7 +548,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
             <div className="absolute inset-0 bg-[#004ac6]/10 pointer-events-none" />
             <div className="absolute bottom-2.5 inset-x-2.5 flex gap-2">
               <a
-                href="https://maps.google.com/?q=پاکدشت+مجتمع+پزشکی+راستین"
+                href={CLINIC_INFO.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 flex items-center justify-center gap-1.5 bg-white/95 backdrop-blur-md text-[#191c1e] py-2 rounded-full text-xs font-bold shadow-md hover:bg-[#eceef0] transition-all"
@@ -552,11 +557,13 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 <span>مسیریابی در گوگل‌مپ</span>
               </a>
               <a
-                href={`tel:${CLINIC_INFO.phone}`}
+                href={CLINIC_INFO.neshanUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex-1 flex items-center justify-center gap-1.5 bg-[#2563eb] text-white py-2 rounded-full text-xs font-bold shadow-md active:scale-95 transition-all"
               >
                 <span className="material-symbols-outlined text-base">directions</span>
-                <span>راهنمای تلفنی مسیر</span>
+                <span>مسیریاب نشان</span>
               </a>
             </div>
           </div>
@@ -575,11 +582,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({
           </p>
           <div className="flex flex-col gap-2">
             <a
-              href={`tel:${CLINIC_INFO.phone}`}
+              href={`tel:${CLINIC_INFO.phone2}`}
               className="w-full flex items-center justify-center gap-2 bg-white text-[#004ac6] py-3 rounded-full text-sm font-bold shadow-md active:scale-95 transition-all"
             >
               <span className="material-symbols-outlined">call</span>
-              <span>تماس فوری: {CLINIC_INFO.phoneDisplay}</span>
+              <span>تماس فوری: {CLINIC_INFO.phoneDisplay2}</span>
             </a>
           </div>
         </section>
@@ -1357,8 +1364,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                       </div>
                       <div>
                         <h4 className="text-sm font-bold text-[#191c1e]">آدرس کلینیک</h4>
-                        <p className="text-base text-[#565e74] mt-1">
-                          پاکدشت، مجتمع پزشکی راستین، طبقه دوم، کلینیک دندان‌پزشکی پارمیس
+                        <p className="text-base text-[#565e74] mt-1 leading-relaxed">
+                          پاکدشت، بلوار شهدای قمی، میدان علی ابن ابیطالب، ابتدای بلوار علی ابن ابیطالب، مجتمع پزشکی راستین، طبقه دوم، کلینیک دندان‌پزشکی پارمیس
                         </p>
                       </div>
                     </div>
@@ -1372,11 +1379,14 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                       </div>
                       <div>
                         <h4 className="text-sm font-bold text-[#191c1e]">شماره تماس مستقیم</h4>
-                        <p className="text-xl font-bold text-[#004ac6] mt-1">
-                          <a className="hover:underline" href={`tel:${CLINIC_INFO.phone}`}>
-                            ۰۲۱ - ۳۶۰۴ ۸۵۸۱
+                        <div className="text-xl font-bold text-[#004ac6] mt-1 space-y-1 dir-ltr text-right">
+                          <a className="block hover:underline" href="tel:02136048581">
+                            ۰۲۱۳۶۰۴۸۵۸۱
                           </a>
-                        </p>
+                          <a className="block hover:underline" href="tel:02136048582">
+                            ۰۲۱۳۶۰۴۸۵۸۲
+                          </a>
+                        </div>
                         <span className="text-sm text-[#565e74]">
                           پاسخگویی و هماهنگی نوبت ویزیت
                         </span>
@@ -1436,20 +1446,36 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 <div className="p-4 flex flex-col sm:flex-row items-center justify-between gap-4 mt-2">
                   <div>
                     <div className="text-sm font-bold text-[#191c1e]">
-                      مسیریابی آسان درون‌شهری
+                      مسیریابی آسان و امکانات رفاهی
                     </div>
                     <div className="text-sm text-[#565e74]">
-                      دسترسی راحت با وسایل نقلیه عمومی و پارکینگ مناسب
+                      فضای مناسب پارک خودرو، آسانسور فعال، داروخانه در مجتمع و امکانات رفاهی کلینیک
                     </div>
                   </div>
-                  <div className="flex items-center gap-2 w-full sm:w-auto">
+                  <div className="flex flex-wrap items-center gap-2 w-full sm:w-auto">
+                    <a
+                      href={CLINIC_INFO.neshanUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 rounded-full bg-[#004ac6] text-white font-bold text-xs hover:bg-[#003896] transition-all"
+                    >
+                      مسیریابی با نشان
+                    </a>
+                    <a
+                      href={CLINIC_INFO.baladUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 rounded-full bg-emerald-600 text-white font-bold text-xs hover:bg-emerald-700 transition-all"
+                    >
+                      مسیریابی با بلد
+                    </a>
                     <a
                       href={CLINIC_INFO.googleMapsUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full sm:w-auto text-center px-4 py-2.5 rounded-full border border-[#004ac6] text-[#004ac6] font-bold text-xs hover:bg-[#004ac6]/5 transition-all"
+                      className="px-4 py-2 rounded-full border border-[#004ac6] text-[#004ac6] font-bold text-xs hover:bg-[#004ac6]/5 transition-all"
                     >
-                      لوکیشن در نشان / بلد
+                      گوگل مپ
                     </a>
                   </div>
                 </div>
@@ -1479,15 +1505,15 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 </p>
               </div>
 
-              <div className="shrink-0 relative z-10 w-full sm:w-auto flex flex-col sm:flex-row items-center gap-4">
+              <div className="shrink-0 relative z-10 w-full sm:w-auto flex items-center">
                 <a
-                  href={`tel:${CLINIC_INFO.phone}`}
+                  href={`tel:${CLINIC_INFO.phone2}`}
                   className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white text-[#004ac6] text-xl font-bold px-8 py-4 rounded-full shadow-lg hover:scale-[1.03] transition-all"
                 >
                   <span className="material-symbols-fill material-symbols-outlined text-[#004ac6] text-[24px]">
                     call
                   </span>
-                  <span>۰۲۱ - ۳۶۰۴ ۸۵۸۱</span>
+                  <span>تماس: {CLINIC_INFO.phoneDisplay2}</span>
                 </a>
               </div>
             </div>

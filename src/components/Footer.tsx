@@ -2,11 +2,11 @@ import React from 'react';
 import { CLINIC_INFO } from '../data/clinicData.ts';
 
 interface FooterProps {
-  onSelectPage?: (page: 'home' | 'services' | 'about' | 'blog') => void;
+  onSelectPage?: (page: 'home' | 'services' | 'about' | 'blog' | 'gallery' | 'contact') => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({ onSelectPage }) => {
-  const handleLink = (e: React.MouseEvent, page: 'home' | 'services' | 'about' | 'blog', hash?: string) => {
+  const handleLink = (e: React.MouseEvent, page: 'home' | 'services' | 'about' | 'blog' | 'gallery' | 'contact', hash?: string) => {
     if (onSelectPage) {
       e.preventDefault();
       onSelectPage(page);
@@ -42,9 +42,13 @@ export const Footer: React.FC<FooterProps> = ({ onSelectPage }) => {
             <span>پاکدشت، مجتمع پزشکی راستین</span>
           </div>
 
-          <div className="flex items-center justify-center gap-1">
-            <span className="material-symbols-outlined text-sm text-[#b4c5ff]">call</span>
-            <span>تلفن: {CLINIC_INFO.phoneCompact}</span>
+          <div className="flex flex-col items-center justify-center gap-1">
+            <div className="flex items-center gap-1">
+              <span className="material-symbols-outlined text-sm text-[#b4c5ff]">call</span>
+              <span>تلفن مطب:</span>
+            </div>
+            <a href="tel:02136048581" className="text-[#eff1f3] hover:text-[#b4c5ff]">۰۲۱۳۶۰۴۸۵۸۱</a>
+            <a href="tel:02136048582" className="text-[#eff1f3] hover:text-[#b4c5ff]">۰۲۱۳۶۰۴۸۵۸۲</a>
           </div>
 
           <div className="flex items-center justify-center gap-1">
@@ -133,6 +137,15 @@ export const Footer: React.FC<FooterProps> = ({ onSelectPage }) => {
               </li>
               <li>
                 <a
+                  href="#gallery"
+                  onClick={(e) => handleLink(e, 'gallery')}
+                  className="text-[#c3c6d7] hover:text-[#eff1f3] transition-colors text-sm"
+                >
+                  نمونه درمان‌ها و لبخند
+                </a>
+              </li>
+              <li>
+                <a
                   href="#blog"
                   onClick={(e) => handleLink(e, 'blog')}
                   className="text-[#c3c6d7] hover:text-[#eff1f3] transition-colors text-sm"
@@ -143,18 +156,24 @@ export const Footer: React.FC<FooterProps> = ({ onSelectPage }) => {
               <li>
                 <a
                   href="#contact"
-                  onClick={(e) => handleLink(e, 'home', '#contact')}
+                  onClick={(e) => handleLink(e, 'contact')}
                   className="text-[#c3c6d7] hover:text-[#eff1f3] transition-colors text-sm"
                 >
-                  راهنمای بیماران
+                  تماس و مسیریابی
                 </a>
               </li>
-              <li>
+              <li className="space-y-1">
                 <a
-                  href={`tel:${CLINIC_INFO.phone}`}
-                  className="text-[#c3c6d7] hover:text-[#eff1f3] transition-colors text-sm"
+                  href="tel:02136048581"
+                  className="block text-[#c3c6d7] hover:text-[#eff1f3] transition-colors text-sm"
                 >
-                  تماس: {CLINIC_INFO.phoneCompact}
+                  ۰۲۱۳۶۰۴۸۵۸۱
+                </a>
+                <a
+                  href="tel:02136048582"
+                  className="block text-[#c3c6d7] hover:text-[#eff1f3] transition-colors text-sm"
+                >
+                  ۰۲۱۳۶۰۴۸۵۸۲
                 </a>
               </li>
             </ul>
@@ -166,11 +185,11 @@ export const Footer: React.FC<FooterProps> = ({ onSelectPage }) => {
             <p className="text-sm text-[#c3c6d7] leading-relaxed">{CLINIC_INFO.shortAddress}</p>
             <div className="mt-2">
               <a
-                href={`tel:${CLINIC_INFO.phone}`}
+                href={`tel:${CLINIC_INFO.phone2}`}
                 className="inline-flex items-center gap-2 bg-[#b4c5ff] text-[#00174b] px-4 py-2 rounded-full text-xs font-bold hover:bg-white transition-colors"
               >
                 <span className="material-symbols-outlined text-[18px]">call</span>
-                <span>تلفن تماس: {CLINIC_INFO.phoneDisplay}</span>
+                <span>تلفن تماس: {CLINIC_INFO.phoneDisplay2}</span>
               </a>
             </div>
           </div>

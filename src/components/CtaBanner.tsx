@@ -20,11 +20,11 @@ export const CtaBanner: React.FC<CtaBannerProps> = () => {
             برای مشاوره تخصصی و رزرو اولین نوبت همین حالا با دکتر شمسپور تماس بگیرید.
           </p>
           <a
-            href={`tel:${CLINIC_INFO.phone}`}
+            href={`tel:${CLINIC_INFO.phone2}`}
             className="inline-flex items-center justify-center gap-2 w-full py-3.5 bg-white text-[#004ac6] text-sm rounded-full font-bold shadow-md active:scale-95 transition-transform"
           >
             <span className="material-symbols-outlined text-sm">phone_in_talk</span>
-            <span>تماس مستقیم فوری: {CLINIC_INFO.phoneCompact}</span>
+            <span>تماس مستقیم فوری: {CLINIC_INFO.phoneCompact2}</span>
           </a>
         </div>
       </div>
@@ -52,13 +52,13 @@ export const CtaBanner: React.FC<CtaBannerProps> = () => {
 
             <div className="relative z-10 shrink-0 w-full md:w-auto">
               <a
-                href={`tel:${CLINIC_INFO.phone}`}
+                href={`tel:${CLINIC_INFO.phone2}`}
                 className="w-full inline-flex items-center justify-center gap-3 bg-white text-[#004ac6] hover:bg-[#dbe1ff] hover:text-[#004ac6] px-8 py-4 rounded-full font-bold text-sm shadow-lg hover:shadow-xl transition-all duration-200 active:scale-[0.98]"
               >
                 <span className="material-symbols-fill material-symbols-outlined text-[24px]">
                   call
                 </span>
-                <span className="font-bold text-xl">تماس: {CLINIC_INFO.phoneDisplay}</span>
+                <span className="font-bold text-xl">تماس: {CLINIC_INFO.phoneDisplay2}</span>
               </a>
             </div>
           </div>

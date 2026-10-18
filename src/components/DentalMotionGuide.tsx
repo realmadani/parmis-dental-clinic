@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, useScroll, useSpring } from 'motion/react';
 
 interface DentalMotionGuideProps {
-  activePage: 'home' | 'services' | 'about' | 'blog';
+  activePage: 'home' | 'services' | 'about' | 'blog' | 'article' | 'gallery' | 'contact';
 }
 
 /**
@@ -34,7 +34,7 @@ export const DentalMotionGuide: React.FC<DentalMotionGuideProps> = ({ activePage
     const timer = setTimeout(() => {
       // Select headings, cards, and key content blocks to guide the user's eye smoothly
       const revealTargets = document.querySelectorAll(
-        'main section h1, main section h2, main section > div > div, main article, [data-dental-card]'
+        'main section h1, main section h2, main section > div > div, [data-dental-card]'
       );
 
       revealTargets.forEach((el, index) => {

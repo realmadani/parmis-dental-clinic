@@ -2,9 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import { CLINIC_INFO } from '../data/clinicData.ts';
 
 interface NavbarProps {
-  activePage: 'home' | 'services' | 'about' | 'blog' | 'article';
-  onSelectPage: (page: 'home' | 'services' | 'about' | 'blog' | 'article') => void;
-  onOpenBooking: (preselectedService?: string) => void;
+  activePage: 'home' | 'services' | 'about' | 'blog' | 'article' | 'gallery' | 'contact';
+  onSelectPage: (page: 'home' | 'services' | 'about' | 'blog' | 'article' | 'gallery' | 'contact') => void;
+  onOpenBooking?: (preselectedService?: string) => void;
   onOpenCostCalculator: () => void;
 }
 
@@ -61,7 +61,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     };
   }, [isDrawerOpen]);
 
-  const handleNavClick = (page: 'home' | 'services' | 'about' | 'blog' | 'article', hash?: string) => {
+  const handleNavClick = (page: 'home' | 'services' | 'about' | 'blog' | 'article' | 'gallery' | 'contact', hash?: string) => {
     handleCloseDrawer();
     onSelectPage(page);
     if (hash) {
@@ -161,8 +161,12 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             <button
               type="button"
-              onClick={() => handleNavClick('home', '#transformations')}
-              className="text-sm text-[#565e74] hover:text-[#004ac6] font-semibold transition-colors cursor-pointer pb-1"
+              onClick={() => handleNavClick('gallery')}
+              className={`text-sm transition-colors cursor-pointer pb-1 ${
+                activePage === 'gallery'
+                  ? 'text-[#004ac6] font-bold border-b-2 border-[#004ac6]'
+                  : 'text-[#565e74] hover:text-[#004ac6] font-semibold'
+              }`}
             >
               نمونه درمان‌ها و لبخند
             </button>
@@ -193,10 +197,14 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             <button
               type="button"
-              onClick={() => handleNavClick('home', '#contact')}
-              className="text-sm text-[#565e74] hover:text-[#004ac6] font-semibold transition-colors cursor-pointer pb-1"
+              onClick={() => handleNavClick('contact')}
+              className={`text-sm transition-colors cursor-pointer pb-1 ${
+                activePage === 'contact'
+                  ? 'text-[#004ac6] font-bold border-b-2 border-[#004ac6]'
+                  : 'text-[#565e74] hover:text-[#004ac6] font-semibold'
+              }`}
             >
-              تماس و نوبت‌دهی
+              تماس و مسیریابی
             </button>
           </nav>
 
@@ -204,9 +212,9 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex items-center">
             <button
               type="button"
-              onClick={() => handleNavClick('home', '#contact')}
-              title="تماس با ما و مسیریابی"
-              aria-label="تماس با ما"
+              onClick={() => handleNavClick('contact')}
+              title="تماس و مسیریابی"
+              aria-label="تماس با ما و مسیریابی"
               className="w-10 h-10 rounded-full bg-[#004ac6] hover:bg-[#2563eb] text-white flex items-center justify-center shadow-xs hover:shadow-md transition-all duration-200 active:scale-95 cursor-pointer"
             >
               <span className="material-symbols-fill material-symbols-outlined text-[20px]">
@@ -345,10 +353,21 @@ export const Navbar: React.FC<NavbarProps> = ({
 
               <button
                 type="button"
-                onClick={() => handleNavClick('home', '#transformations')}
-                className="w-full flex items-center gap-3 text-[#434655] hover:bg-[#f2f4f6] font-semibold rounded-full px-4 py-3 active:scale-[0.98] transition-all cursor-pointer min-w-0"
+                onClick={() => handleNavClick('gallery')}
+                className={`w-full flex items-center gap-3 rounded-full px-4 py-3 active:scale-[0.98] transition-all cursor-pointer min-w-0 ${
+                  activePage === 'gallery'
+                    ? 'bg-[#004ac6]/10 text-[#004ac6] font-bold'
+                    : 'text-[#434655] hover:bg-[#f2f4f6] font-semibold'
+                }`}
               >
-                <span className="material-symbols-outlined shrink-0">auto_fix_high</span>
+                <span
+                  className={`material-symbols-outlined shrink-0 ${
+                    activePage === 'gallery' ? 'material-symbols-fill' : ''
+                  }`}
+                  style={{ fontVariationSettings: activePage === 'gallery' ? "'FILL' 1" : undefined }}
+                >
+                  auto_fix_high
+                </span>
                 <span className="text-xs truncate">نمونه درمان‌ها و لبخند</span>
               </button>
 
@@ -392,10 +411,21 @@ export const Navbar: React.FC<NavbarProps> = ({
 
               <button
                 type="button"
-                onClick={() => handleNavClick('home', '#contact')}
-                className="w-full flex items-center gap-3 text-[#434655] hover:bg-[#f2f4f6] font-semibold rounded-full px-4 py-3 active:scale-[0.98] transition-all cursor-pointer min-w-0"
+                onClick={() => handleNavClick('contact')}
+                className={`w-full flex items-center gap-3 rounded-full px-4 py-3 active:scale-[0.98] transition-all cursor-pointer min-w-0 ${
+                  activePage === 'contact'
+                    ? 'bg-[#004ac6]/10 text-[#004ac6] font-bold'
+                    : 'text-[#434655] hover:bg-[#f2f4f6] font-semibold'
+                }`}
               >
-                <span className="material-symbols-outlined shrink-0">location_on</span>
+                <span
+                  className={`material-symbols-outlined shrink-0 ${
+                    activePage === 'contact' ? 'material-symbols-fill' : ''
+                  }`}
+                  style={{ fontVariationSettings: activePage === 'contact' ? "'FILL' 1" : undefined }}
+                >
+                  location_on
+                </span>
                 <span className="text-xs truncate">تماس و مسیریابی (پاکدشت)</span>
               </button>
             </nav>

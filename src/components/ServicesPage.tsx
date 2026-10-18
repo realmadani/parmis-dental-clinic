@@ -52,7 +52,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
     },
     {
       q: 'چگونه می‌توانم برای مشاوره اولیه یا ویزیت نوبت رزرو کنم؟',
-      a: 'کافی است با شماره مستقیم مطب ۰۲۱۳۶۰۴۸۵۸۱ تماس حاصل فرمایید. همکاران پذیرش نزدیک‌ترین زمان خالی متناسب با برنامه شما در مجتمع پزشکی راستین پاکدشت را هماهنگ خواهند کرد.',
+      a: 'کافی است با شماره‌های مستقیم مطب ۰۲۱۳۶۰۴۸۵۸۱ و ۰۲۱۳۶۰۴۸۵۸۲ تماس حاصل فرمایید. همکاران پذیرش نزدیک‌ترین زمان خالی متناسب با برنامه شما در مجتمع پزشکی راستین پاکدشت را هماهنگ خواهند کرد.',
     },
   ];
 
@@ -735,20 +735,21 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
                 <span className="text-[#565e74] font-medium">ساعات کاری مطب:</span>
                 <span className="font-bold text-[#191c1e]">شنبه تا پنجشنبه: ۹:۰۰ الی ۲۱:۰۰</span>
               </div>
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-start">
                 <span className="text-[#565e74] font-medium">شماره تماس مستقیم:</span>
-                <span className="font-bold text-[#004ac6] text-sm">
-                  {CLINIC_INFO.phoneDisplay}
-                </span>
+                <div className="font-bold text-[#004ac6] text-sm space-y-0.5 text-left dir-ltr">
+                  <div className="block">۰۲۱۳۶۰۴۸۵۸۱</div>
+                  <div className="block">۰۲۱۳۶۰۴۸۵۸۲</div>
+                </div>
               </div>
             </div>
 
             <a
-              href={`tel:${CLINIC_INFO.phone}`}
+              href={`tel:${CLINIC_INFO.phone2}`}
               className="w-full bg-[#2563eb] text-white py-3 rounded-full flex items-center justify-center gap-2 text-sm font-bold shadow-md active:scale-95 duration-150"
             >
               <span className="material-symbols-outlined">call</span>
-              <span>تماس و رزرو وقت ویزیت ({CLINIC_INFO.phoneCompact})</span>
+              <span>تماس و رزرو وقت ویزیت ({CLINIC_INFO.phoneCompact2})</span>
             </a>
           </div>
         </section>
@@ -1755,11 +1756,11 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking }) => 
               </div>
               <div className="relative z-10 flex items-center gap-4 shrink-0">
                 <a
-                  href={`tel:${CLINIC_INFO.phone}`}
+                  href={`tel:${CLINIC_INFO.phone2}`}
                   className="px-8 py-4 rounded-full bg-white hover:bg-[#f2f4f6] text-[#004ac6] text-xl font-bold shadow-lg hover:scale-105 active:scale-95 transition-all flex items-center gap-3"
                 >
                   <span className="material-symbols-outlined text-2xl">call</span>
-                  <span>تماس: {CLINIC_INFO.phoneCompact}</span>
+                  <span>تماس: {CLINIC_INFO.phoneCompact2}</span>
                 </a>
               </div>
             </div>

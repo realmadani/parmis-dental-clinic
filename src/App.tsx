@@ -11,44 +11,73 @@ import { ArticlesSection } from './components/ArticlesSection.tsx';
 import { FaqAndContact } from './components/FaqAndContact.tsx';
 import { CtaBanner } from './components/CtaBanner.tsx';
 import { Footer } from './components/Footer.tsx';
-import { AppointmentModal } from './components/AppointmentModal.tsx';
 import { ServicesPage } from './components/ServicesPage.tsx';
 import { AboutPage } from './components/AboutPage.tsx';
 import { BlogPage } from './components/BlogPage.tsx';
+import { ArticleDetailPage } from './components/ArticleDetailPage.tsx';
+import { SmileGalleryPage } from './components/SmileGalleryPage.tsx';
+import { ContactPage } from './components/ContactPage.tsx';
 import { DentalMotionGuide, DentalEyeGuideDivider } from './components/DentalMotionGuide.tsx';
+import { CLINIC_INFO } from './data/clinicData.ts';
 
 export default function App() {
-  const [activePage, setActivePage] = useState<'home' | 'services' | 'about' | 'blog'>(() => {
+  const [activePage, setActivePage] = useState<'home' | 'services' | 'about' | 'blog' | 'article' | 'gallery' | 'contact'>(() => {
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search);
       const pageParam = params.get('page');
       if (pageParam === 'services') return 'services';
       if (pageParam === 'about') return 'about';
       if (pageParam === 'blog') return 'blog';
+      if (pageParam === 'article') return 'article';
+      if (pageParam === 'gallery') return 'gallery';
+      if (pageParam === 'contact') return 'contact';
     }
     return 'home';
   });
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [selectedArticleId, setSelectedArticleId] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('id') || params.get('articleId') || 'featured-composite-vs-laminate';
+    }
+    return 'featured-composite-vs-laminate';
+  });
   const [isCostModalOpen, setIsCostModalOpen] = useState(false);
-  const [preselectedService, setPreselectedService] = useState<string | undefined>(undefined);
 
   useEffect(() => {
     const url = new URL(window.location.href);
     if (activePage === 'services') {
       url.searchParams.set('page', 'services');
+      url.searchParams.delete('id');
     } else if (activePage === 'about') {
       url.searchParams.set('page', 'about');
+      url.searchParams.delete('id');
     } else if (activePage === 'blog') {
       url.searchParams.set('page', 'blog');
+      url.searchParams.delete('id');
+    } else if (activePage === 'article') {
+      url.searchParams.set('page', 'article');
+      if (selectedArticleId) url.searchParams.set('id', selectedArticleId);
+    } else if (activePage === 'gallery') {
+      url.searchParams.set('page', 'gallery');
+      url.searchParams.delete('id');
+    } else if (activePage === 'contact') {
+      url.searchParams.set('page', 'contact');
+      url.searchParams.delete('id');
     } else {
       url.searchParams.delete('page');
+      url.searchParams.delete('id');
     }
     window.history.replaceState({}, '', url.toString());
-  }, [activePage]);
+  }, [activePage, selectedArticleId]);
 
-  const handleOpenBooking = (serviceId?: string) => {
-    setPreselectedService(serviceId);
-    setIsBookingOpen(true);
+  const handleOpenBooking = (_serviceId?: string) => {
+    window.location.href = `tel:${CLINIC_INFO.phone}`;
+  };
+
+  const handleSelectArticle = (artId: string) => {
+    setSelectedArticleId(artId);
+    setActivePage('article');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -92,7 +121,13 @@ export default function App() {
           />
 
           {/* 4. Smile Transformations (Before / After) */}
-          <SmileTransformations onOpenBooking={() => handleOpenBooking('cosmetic-composite')} />
+          <SmileTransformations
+            onOpenBooking={() => handleOpenBooking('cosmetic-composite')}
+            onNavigateGallery={() => {
+              setActivePage('gallery');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          />
 
           <DentalEyeGuideDivider
             label="خدمات تخصصی دندان‌پزشکی"
@@ -121,6 +156,7 @@ export default function App() {
               setActivePage('blog');
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
+            onSelectArticle={handleSelectArticle}
             onOpenBooking={(sId) => handleOpenBooking(sId)}
           />
 
@@ -155,14 +191,70 @@ export default function App() {
             }}
           />
         </main>
-      ) : (
+      ) : activePage === 'article' ? (
         <main className="flex-grow">
-          <BlogPage
+          <ArticleDetailPage
+            articleId={selectedArticleId}
+            onNavigateHome={() => {
+              setActivePage('home');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            onNavigateBlog={() => {
+              setActivePage('blog');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            onSelectArticle={handleSelectArticle}
+            onOpenBooking={(sId) => handleOpenBooking(sId)}
+          />
+        </main>
+      ) : activePage === 'gallery' ? (
+        <main className="flex-grow">
+          <SmileGalleryPage
             onOpenBooking={(sId) => handleOpenBooking(sId)}
             onNavigateHome={() => {
               setActivePage('home');
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
+            onNavigateServices={() => {
+              setActivePage('services');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            onNavigateBlog={() => {
+              setActivePage('blog');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          />
+        </main>
+      ) : activePage === 'contact' ? (
+        <main className="flex-grow">
+          <ContactPage
+            onNavigateHome={() => {
+              setActivePage('home');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            onNavigateServices={() => {
+              setActivePage('services');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            onNavigateGallery={() => {
+              setActivePage('gallery');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            onNavigateBlog={() => {
+              setActivePage('blog');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          />
+        </main>
+      ) : (
+        <main className="flex-grow">
+          <BlogPage
+            onOpenBooking={() => handleOpenBooking()}
+            onNavigateHome={() => {
+              setActivePage('home');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            onSelectArticle={handleSelectArticle}
           />
         </main>
       )}
@@ -174,14 +266,7 @@ export default function App() {
       <CostCalculatorSection
         isOpen={isCostModalOpen}
         onClose={() => setIsCostModalOpen(false)}
-        onOpenBooking={(name) => handleOpenBooking(name)}
-      />
-
-      {/* Interactive Appointment Booking Modal */}
-      <AppointmentModal
-        isOpen={isBookingOpen}
-        onClose={() => setIsBookingOpen(false)}
-        preselectedServiceId={preselectedService}
+        onOpenBooking={() => handleOpenBooking()}
       />
     </div>
   );

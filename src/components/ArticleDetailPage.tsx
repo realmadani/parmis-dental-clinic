@@ -1143,7 +1143,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
                 {CLINIC_INFO.doctorName}
               </h4>
               <p className="text-[#004ac6] text-xs font-bold mb-3">
-                {CLINIC_INFO.doctorSpecialty}
+                {CLINIC_INFO.doctorRole}
               </p>
               <p className="text-xs text-[#565e74] leading-relaxed mb-4 text-justify">
                 دارای بورد تخصصی و سال‌ها تجربه در ارائه درمان‌های پیشرفته ایمپلنت، اصلاح لبخند دیجیتال و پروتزهای دندانی در شهرستان پاکدشت.
@@ -1299,11 +1299,11 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
           </div>
           <div className="flex flex-col sm:flex-row lg:flex-col gap-3 w-full sm:w-auto shrink-0">
             <a
-              href={`tel:${CLINIC_INFO.phone}`}
+              href={`tel:${CLINIC_INFO.phone2}`}
               className="bg-[#004ac6] text-white hover:bg-[#2563eb] transition-all px-8 py-3.5 rounded-full text-center font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md active:scale-95"
             >
               <span className="material-symbols-outlined text-lg">call</span>
-              <span>تماس با مطب: {CLINIC_INFO.phoneCompact}</span>
+              <span>تماس با مطب: {CLINIC_INFO.phoneCompact2}</span>
             </a>
             <button
               type="button"
@@ -1316,48 +1316,6 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
           </div>
         </section>
       </main>
-
-      {/* ================= MOBILE STICKY BOTTOM NAV BAR ================= */}
-      <nav className="fixed bottom-0 left-0 w-full z-40 flex justify-around items-center px-4 py-2 bg-white/95 backdrop-blur-md border-t border-[#c3c6d7]/30 shadow-lg md:hidden">
-        {/* Tab 1: تماس سریع */}
-        <a
-          href={`tel:${CLINIC_INFO.phone}`}
-          className="flex flex-col items-center justify-center text-[#565e74] hover:text-[#004ac6] transition-colors active:scale-95 duration-150"
-        >
-          <span className="material-symbols-outlined text-2xl">call</span>
-          <span className="text-[11px] font-medium mt-0.5">تماس سریع</span>
-        </a>
-
-        {/* Tab 2: رزرو نوبت */}
-        <button
-          type="button"
-          onClick={() => onOpenBooking('cosmetic-composite')}
-          className="flex flex-col items-center justify-center text-[#565e74] hover:text-[#004ac6] transition-colors active:scale-95 duration-150 cursor-pointer"
-        >
-          <span className="material-symbols-outlined text-2xl">calendar_month</span>
-          <span className="text-[11px] font-medium mt-0.5">رزرو نوبت</span>
-        </button>
-
-        {/* Tab 3: خدمات / وبلاگ */}
-        <button
-          type="button"
-          onClick={onNavigateBlog}
-          className="flex flex-col items-center justify-center bg-[#004ac6] text-white rounded-full px-5 py-1.5 font-bold active:scale-95 transition-transform duration-150 shadow-sm cursor-pointer"
-        >
-          <span className="material-symbols-outlined text-2xl">menu_book</span>
-          <span className="text-[11px] mt-0.5">مقالات</span>
-        </button>
-
-        {/* Tab 4: مسیریابی */}
-        <button
-          type="button"
-          onClick={onNavigateHome}
-          className="flex flex-col items-center justify-center text-[#565e74] hover:text-[#004ac6] transition-colors active:scale-95 duration-150 cursor-pointer"
-        >
-          <span className="material-symbols-outlined text-2xl">directions</span>
-          <span className="text-[11px] font-medium mt-0.5">مسیریابی</span>
-        </button>
-      </nav>
     </div>
   );
 };

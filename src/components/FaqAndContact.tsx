@@ -69,9 +69,8 @@ export const FaqAndContact: React.FC = () => {
               کلینیک دندان‌پزشکی در پاکدشت
             </h2>
 
-            <p className="text-sm text-[#434655] mb-4">
-              پاکدشت، مجتمع پزشکی راستین، طبقه دوم، کلینیک تخصصی دندان‌پزشکی پارمیس (دکتر انوشیروان
-              شمسپور)
+            <p className="text-sm text-[#434655] mb-4 leading-relaxed">
+              پاکدشت، بلوار شهدای قمی، میدان علی ابن ابیطالب، ابتدای بلوار علی ابن ابیطالب، مجتمع پزشکی راستین، طبقه دوم، کلینیک دندان‌پزشکی پارمیس
             </p>
 
             {/* Simulated Interactive Map Card for Pakdasht */}
@@ -90,27 +89,55 @@ export const FaqAndContact: React.FC = () => {
                   </span>
                   <span>پاکدشت، مجتمع پزشکی راستین</span>
                 </span>
-                <a
-                  href={CLINIC_INFO.googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#004ac6] hover:underline"
-                >
-                  مسیریابی با نشان/بلد
-                </a>
+                <div className="flex items-center gap-2">
+                  <a
+                    href={CLINIC_INFO.neshanUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#004ac6] hover:underline"
+                  >
+                    نشان
+                  </a>
+                  <span className="text-[#c3c6d7]">|</span>
+                  <a
+                    href={CLINIC_INFO.baladUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-600 hover:underline"
+                  >
+                    بلد
+                  </a>
+                  <span className="text-[#c3c6d7]">|</span>
+                  <a
+                    href={CLINIC_INFO.googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-rose-600 hover:underline"
+                  >
+                    گوگل‌مپ
+                  </a>
+                </div>
               </div>
             </div>
 
             {/* Contact Box & Call Trigger */}
             <div className="bg-[#f2f4f6] p-3 rounded-xl border border-[#c3c6d7]/20 space-y-2">
-              <div className="flex items-center justify-between text-sm">
+              <div className="flex items-start justify-between text-sm">
                 <span className="text-[#434655]">شماره تلفن مستقیم مطب:</span>
-                <a
-                  href={`tel:${CLINIC_INFO.phone}`}
-                  className="text-[#004ac6] font-bold dir-ltr tracking-wider"
-                >
-                  {CLINIC_INFO.phoneDisplay}
-                </a>
+                <div className="space-y-1 text-left">
+                  <a
+                    href="tel:02136048581"
+                    className="block text-[#004ac6] font-bold dir-ltr tracking-wider"
+                  >
+                    ۰۲۱۳۶۰۴۸۵۸۱
+                  </a>
+                  <a
+                    href="tel:02136048582"
+                    className="block text-[#004ac6] font-bold dir-ltr tracking-wider"
+                  >
+                    ۰۲۱۳۶۰۴۸۵۸۲
+                  </a>
+                </div>
               </div>
               <div className="flex items-center justify-between text-sm">
                 <span className="text-[#434655]">ساعات پاسخگویی:</span>
@@ -206,12 +233,20 @@ export const FaqAndContact: React.FC = () => {
                         <p className="text-sm font-bold text-[#191c1e]">
                           شماره تماس مستقیم نوبت‌دهی:
                         </p>
-                        <a
-                          href={`tel:${CLINIC_INFO.phone}`}
-                          className="text-lg font-bold text-[#004ac6] hover:underline dir-ltr text-right inline-block"
-                        >
-                          {CLINIC_INFO.phoneDisplay}
-                        </a>
+                        <div className="space-y-1 mt-1">
+                          <a
+                            href="tel:02136048581"
+                            className="block text-lg font-bold text-[#004ac6] hover:underline dir-ltr text-right"
+                          >
+                            ۰۲۱۳۶۰۴۸۵۸۱
+                          </a>
+                          <a
+                            href="tel:02136048582"
+                            className="block text-lg font-bold text-[#004ac6] hover:underline dir-ltr text-right"
+                          >
+                            ۰۲۱۳۶۰۴۸۵۸۲
+                          </a>
+                        </div>
                       </div>
                     </div>
 
@@ -228,23 +263,51 @@ export const FaqAndContact: React.FC = () => {
                 </div>
 
                 {/* Location Map Snapshot */}
-                <div className="relative rounded-2xl overflow-hidden border border-[#c3c6d7]/30 aspect-[16/8]">
-                  <img
-                    src={CLINIC_INFO.mapImage}
-                    alt="نقشه موقعیت کلینیک دندان‌پزشکی پارمیس در پاکدشت"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                  <a
-                    href={CLINIC_INFO.googleMapsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="absolute inset-0 bg-[#004ac6]/10 hover:bg-[#004ac6]/20 flex items-center justify-center transition-colors"
-                  >
-                    <span className="bg-white/90 px-4 py-2 rounded-full text-xs font-bold text-[#004ac6] shadow-xs">
-                      مسیریابی در نقشه
-                    </span>
-                  </a>
+                <div className="space-y-3">
+                  <div className="relative rounded-2xl overflow-hidden border border-[#c3c6d7]/30 aspect-[16/8]">
+                    <img
+                      src={CLINIC_INFO.mapImage}
+                      alt="نقشه موقعیت کلینیک دندان‌پزشکی پارمیس در پاکدشت"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                    <a
+                      href={CLINIC_INFO.googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="absolute inset-0 bg-[#004ac6]/10 hover:bg-[#004ac6]/20 flex items-center justify-center transition-colors"
+                    >
+                      <span className="bg-white/95 px-4 py-2 rounded-full text-xs font-bold text-[#004ac6] shadow-xs">
+                        مشاهده مجتمع پزشکی راستین روی نقشه
+                      </span>
+                    </a>
+                  </div>
+                  <div className="grid grid-cols-3 gap-2">
+                    <a
+                      href={CLINIC_INFO.neshanUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="py-2 px-3 rounded-xl bg-[#004ac6]/10 hover:bg-[#004ac6] text-[#004ac6] hover:text-white text-xs font-bold text-center transition-all"
+                    >
+                      مسیریابی نشان
+                    </a>
+                    <a
+                      href={CLINIC_INFO.baladUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="py-2 px-3 rounded-xl bg-emerald-600/10 hover:bg-emerald-600 text-emerald-700 hover:text-white text-xs font-bold text-center transition-all"
+                    >
+                      مسیریابی بلد
+                    </a>
+                    <a
+                      href={CLINIC_INFO.googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="py-2 px-3 rounded-xl bg-rose-600/10 hover:bg-rose-600 text-rose-700 hover:text-white text-xs font-bold text-center transition-all"
+                    >
+                      گوگل مپ
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

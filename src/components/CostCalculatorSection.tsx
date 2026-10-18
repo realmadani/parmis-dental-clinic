@@ -5,6 +5,7 @@ import {
   formatPersianTomans,
   formatPersianNumber,
 } from '../utils/costCalculator.ts';
+import { CLINIC_INFO } from '../data/clinicData.ts';
 
 interface CostCalculatorModalProps {
   isOpen: boolean;
@@ -212,17 +213,14 @@ export const CostCalculatorSection: React.FC<CostCalculatorModalProps> = ({
               </div>
             </div>
 
-            <button
-              type="button"
-              onClick={() => {
-                onClose();
-                onOpenBooking(estimate.treatmentName);
-              }}
-              className="w-full bg-[#004ac6] hover:bg-[#003896] text-white py-3 rounded-full font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs"
+            <a
+              href={`tel:${CLINIC_INFO.phone}`}
+              onClick={onClose}
+              className="w-full bg-[#004ac6] hover:bg-[#003896] text-white py-3 rounded-full font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs transition-all active:scale-95"
             >
-              <span className="material-symbols-outlined text-[18px]">calendar_month</span>
-              <span>رزرو نوبت برای این برآورد</span>
-            </button>
+              <span className="material-symbols-outlined text-[18px]">call</span>
+              <span>تماس تلفنی جهت هماهنگی این برآورد ({CLINIC_INFO.phoneCompact})</span>
+            </a>
           </div>
         </div>
       </div>

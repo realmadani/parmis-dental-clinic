@@ -65,13 +65,22 @@ export const CLINIC_INFO = {
   doctorName: 'دکتر انوشیروان شمسپور',
   doctorRole: 'مسئول فنی و سرپرست درمان کلینیک پارمیس',
   phone: '02136048581',
-  phoneDisplay: '۰۲۱-۳۶۰۴۸۵۸۱',
+  phone2: '02136048582',
+  phoneLine1: '۰۲۱۳۶۰۴۸۵۸۱',
+  phoneLine2: '۰۲۱۳۶۰۴۸۵۸۲',
+  phoneDisplay: '۰۲۱۳۶۰۴۸۵۸۱',
+  phoneDisplay2: '۰۲۱۳۶۰۴۸۵۸۲',
   phoneCompact: '۰۲۱۳۶۰۴۸۵۸۱',
-  address: 'استان تهران، پاکدشت، مجتمع پزشکی راستین، طبقه دوم، کلینیک دندان‌پزشکی پارمیس',
-  shortAddress: 'پاکدشت، مجتمع پزشکی راستین، طبقه دوم',
+  phoneCompact2: '۰۲۱۳۶۰۴۸۵۸۲',
+  address:
+    'پاکدشت، بلوار شهدای قمی، میدان علی ابن ابیطالب، ابتدای بلوار علی ابن ابیطالب، مجتمع پزشکی راستین، طبقه دوم، کلینیک دندان‌پزشکی پارمیس',
+  shortAddress:
+    'پاکدشت، بلوار شهدای قمی، میدان علی ابن ابیطالب، ابتدای بلوار علی ابن ابیطالب، مجتمع پزشکی راستین، طبقه دوم',
   workingHours: 'شنبه تا پنج‌شنبه (با هماهنگی و تعیین وقت قبلی)',
   mobileWorkingHours: '۹ الی ۲۱ (همه‌روزه)',
-  googleMapsUrl: 'https://maps.google.com/?q=پاکدشت+مجتمع+پزشکی+راستین',
+  googleMapsUrl: 'https://maps.app.goo.gl/mW3LBkEkswiF6HBZ8?g_st=ac',
+  neshanUrl: 'https://nshn.ir/fcsbQMQhQxn5EY',
+  baladUrl: 'https://balad.ir/location?latitude=35.483203&longitude=51.680118&zoom=16.500000',
   // Desktop images
   heroImage:
     'https://lh3.googleusercontent.com/aida-public/AB6AXuCPFaA_datw-F1_DHr1TUtJBECQSwTHSr9-64n9RfKP82zD_STvCU_gm9KEbvVzsBkAjDTVR-Ih7KjWJV8AAjmdigBg_QEEmCwIEv6T1VKv-N5kydIMDGZiXjHdIvUrWF6-uPWBkIF9Yzcqa0QdTljTmYHWcOpoe0zdoADgFkuL7rrs8wffQEuRpAUFtsJvt3pc_qNty70FZofnDU1F2ERSvbfZUobOYGPcFX_T8Nyclpzi20d6sp22',
@@ -697,7 +706,7 @@ export const FAQS: FaqItem[] = [
     id: 'faq-1',
     question: 'نحوه دریافت نوبت در دندان‌پزشکی پارمیس چگونه است؟',
     answer:
-      'جهت برقراری هماهنگی و رزرو نوبت ویزیت یا درمان، کافی است در ساعات کاری با شماره مستقیم مطب ۰۲۱-۳۶۰۴۸۵۸۱ تماس حاصل فرمایید تا کارشناسان پذیرش مناسب‌ترین زمان را برای شما هماهنگ کنند.',
+      'جهت برقراری هماهنگی و رزرو نوبت ویزیت یا درمان، کافی است در ساعات کاری با شماره‌های مستقیم مطب ۰۲۱۳۶۰۴۸۵۸۱ و ۰۲۱۳۶۰۴۸۵۸۲ تماس حاصل فرمایید تا کارشناسان پذیرش مناسب‌ترین زمان را برای شما هماهنگ کنند.',
   },
   {
     id: 'faq-2',

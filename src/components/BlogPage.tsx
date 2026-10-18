@@ -473,7 +473,13 @@ export const BlogPage: React.FC<BlogPageProps> = ({
               return (
                 <article
                   key={article.id}
-                  onClick={() => setActiveArticle(article)}
+                  onClick={() => {
+                    if (onSelectArticle) {
+                      onSelectArticle(article.id);
+                    } else {
+                      setActiveArticle(article);
+                    }
+                  }}
                   className="bg-white rounded-2xl border border-[#c3c6d7]/30 shadow-xs overflow-hidden flex flex-col justify-between hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-pointer group"
                 >
                   <div>
@@ -701,8 +707,7 @@ export const BlogPage: React.FC<BlogPageProps> = ({
                 نیاز به ویزیت حضوری یا مشاوره درمان دارید؟
               </h3>
               <p className="text-xs sm:text-sm text-[#565e74] leading-relaxed">
-                پاکدشت، خیابان مطهری، مجتمع پزشکی راستین، طبقه دوم • کلینیک دندان‌پزشکی دکتر
-                انوشیروان شمس‌پور
+                پاکدشت، بلوار شهدای قمی، میدان علی ابن ابیطالب، ابتدای بلوار علی ابن ابیطالب، مجتمع پزشکی راستین، طبقه دوم • کلینیک دندان‌پزشکی پارمیس
               </p>
             </div>
           </div>
@@ -715,14 +720,15 @@ export const BlogPage: React.FC<BlogPageProps> = ({
               <span className="material-symbols-outlined text-lg">call</span>
               <span>تماس مستقیم: {CLINIC_INFO.phoneDisplay}</span>
             </a>
-            <button
-              type="button"
-              onClick={() => onOpenBooking()}
-              className="w-full sm:w-auto px-6 py-3 rounded-full border border-[#004ac6] text-[#004ac6] text-xs sm:text-sm font-bold hover:bg-[#dbe1ff]/30 active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer"
+            <a
+              href="https://wa.me/989120802253"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-6 py-3 rounded-full border border-[#004ac6] text-[#004ac6] text-xs sm:text-sm font-bold hover:bg-[#dbe1ff]/30 active:scale-95 transition-all flex items-center justify-center gap-2"
             >
-              <span className="material-symbols-outlined text-lg">calendar_month</span>
-              <span>رزرو آنلاین نوبت معاینه</span>
-            </button>
+              <span className="material-symbols-outlined text-lg">chat</span>
+              <span>مشاوره و ارسال عکس در واتساپ</span>
+            </a>
           </div>
         </div>
       </section>
@@ -824,17 +830,14 @@ export const BlogPage: React.FC<BlogPageProps> = ({
 
             {/* Modal Bottom Actions */}
             <div className="pt-4 border-t border-[#eceef0] flex flex-wrap items-center justify-between gap-3">
-              <button
-                type="button"
-                onClick={() => {
-                  setActiveArticle(null);
-                  onOpenBooking();
-                }}
+              <a
+                href={`tel:${CLINIC_INFO.phone}`}
+                onClick={() => setActiveArticle(null)}
                 className="bg-[#004ac6] text-white px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold hover:bg-[#2563eb] transition-all cursor-pointer shadow-xs flex items-center gap-1.5"
               >
-                <span className="material-symbols-outlined text-base">calendar_month</span>
-                <span>رزرو نوبت مشاوره این درمان</span>
-              </button>
+                <span className="material-symbols-outlined text-base">call</span>
+                <span>تماس تلفنی جهت مشاوره این درمان</span>
+              </a>
 
               <button
                 type="button"
