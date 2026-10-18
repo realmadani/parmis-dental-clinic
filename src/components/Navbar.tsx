@@ -138,8 +138,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
           </button>
 
-          {/* Desktop Navigation Links */}
-          <nav className="flex items-center gap-5 lg:gap-6">
+           {/* Desktop Navigation Links */}
+          <nav className="flex items-center gap-4 lg:gap-5">
             <button
               type="button"
               onClick={() => handleNavClick('home')}
@@ -211,6 +211,25 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               تماس و مسیریابی
             </button>
+
+            {/* Admin Login Link */}
+            <a
+              href="?page=admin-login"
+              onClick={(e) => {
+                e.preventDefault();
+                const url = new URL(window.location.href);
+                url.searchParams.set('page', 'admin-login');
+                window.history.pushState({}, '', url.toString());
+                window.dispatchEvent(new Event('popstate'));
+                // trigger custom navigation or reload
+                window.location.href = '?page=admin-login';
+              }}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-100 hover:bg-blue-50 text-slate-700 hover:text-blue-600 border border-slate-200 text-xs font-bold transition-all"
+              title="ورود به پنل مدیریت"
+            >
+              <span className="material-symbols-outlined text-base">admin_panel_settings</span>
+              <span>ورود به پنل</span>
+            </a>
           </nav>
 
           {/* Trailing Action: Call Icon Button Only (Navigates to Contact) */}
@@ -430,6 +449,19 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </span>
                 <span className="text-xs truncate">تماس و مسیریابی (پاکدشت)</span>
               </button>
+
+              {/* Admin Panel Link in Mobile Drawer */}
+              <a
+                href="?page=admin-login"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = '?page=admin-login';
+                }}
+                className="w-full flex items-center gap-3 rounded-full px-4 py-3 bg-slate-100 hover:bg-blue-50 text-slate-700 hover:text-blue-600 font-bold transition-all cursor-pointer min-w-0"
+              >
+                <span className="material-symbols-outlined shrink-0">admin_panel_settings</span>
+                <span className="text-xs truncate">ورود به پنل مدیریت</span>
+              </a>
             </nav>
 
             {/* Drawer Footer Quick Dial */}

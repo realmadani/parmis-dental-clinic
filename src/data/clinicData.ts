@@ -748,3 +748,62 @@ export const MOBILE_FAQS: FaqItem[] = [
       'کلینیک همه‌روزه (شنبه تا پنج‌شنبه) از ساعت ۹ صبح الی ۲۱ شب به صورت پیوسته آماده ارائه خدمات به همشهریان محترم پاکدشت و حومه می‌باشد.',
   },
 ];
+
+// Hydrate from localStorage on module load
+if (typeof window !== 'undefined') {
+  try {
+    const savedInfo = localStorage.getItem('PARMIS_CLINIC_INFO_V1');
+    if (savedInfo) {
+      Object.assign(CLINIC_INFO, JSON.parse(savedInfo));
+    }
+    const savedServices = localStorage.getItem('PARMIS_SERVICES_V1');
+    if (savedServices) {
+      const parsed = JSON.parse(savedServices);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        SERVICES.splice(0, SERVICES.length, ...parsed);
+      }
+    }
+    const savedTransformations = localStorage.getItem('PARMIS_TRANSFORMATIONS_V1');
+    if (savedTransformations) {
+      const parsed = JSON.parse(savedTransformations);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        TRANSFORMATIONS.splice(0, TRANSFORMATIONS.length, ...parsed);
+      }
+    }
+    const savedArticles = localStorage.getItem('PARMIS_ARTICLES_V1');
+    if (savedArticles) {
+      const parsed = JSON.parse(savedArticles);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        ARTICLES.splice(0, ARTICLES.length, ...parsed);
+      }
+    }
+  } catch (e) {
+    console.error('Failed to hydrate clinic data from localStorage:', e);
+  }
+}
+
+export function saveClinicDataStores(data: {
+  clinicInfo?: Partial<typeof CLINIC_INFO>;
+  services?: ServiceItem[];
+  transformations?: TransformationItem[];
+  articles?: ArticleItem[];
+}) {
+  if (typeof window === 'undefined') return;
+  if (data.clinicInfo) {
+    Object.assign(CLINIC_INFO, data.clinicInfo);
+    localStorage.setItem('PARMIS_CLINIC_INFO_V1', JSON.stringify(CLINIC_INFO));
+  }
+  if (data.services) {
+    SERVICES.splice(0, SERVICES.length, ...data.services);
+    localStorage.setItem('PARMIS_SERVICES_V1', JSON.stringify(SERVICES));
+  }
+  if (data.transformations) {
+    TRANSFORMATIONS.splice(0, TRANSFORMATIONS.length, ...data.transformations);
+    localStorage.setItem('PARMIS_TRANSFORMATIONS_V1', JSON.stringify(TRANSFORMATIONS));
+  }
+  if (data.articles) {
+    ARTICLES.splice(0, ARTICLES.length, ...data.articles);
+    localStorage.setItem('PARMIS_ARTICLES_V1', JSON.stringify(ARTICLES));
+  }
+  window.dispatchEvent(new Event('clinicDataUpdated'));
+}
