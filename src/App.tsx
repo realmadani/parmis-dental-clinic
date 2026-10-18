@@ -17,13 +17,11 @@ import { BlogPage } from './components/BlogPage.tsx';
 import { ArticleDetailPage } from './components/ArticleDetailPage.tsx';
 import { SmileGalleryPage } from './components/SmileGalleryPage.tsx';
 import { ContactPage } from './components/ContactPage.tsx';
-import { AdminLogin } from './components/AdminLogin.tsx';
-import { AdminDashboard } from './components/AdminDashboard.tsx';
 import { DentalMotionGuide, DentalEyeGuideDivider } from './components/DentalMotionGuide.tsx';
 import { CLINIC_INFO } from './data/clinicData.ts';
 
 export default function App() {
-  const [activePage, setActivePage] = useState<'home' | 'services' | 'about' | 'blog' | 'article' | 'gallery' | 'contact' | 'admin-login' | 'admin-dashboard'>(() => {
+  const [activePage, setActivePage] = useState<'home' | 'services' | 'about' | 'blog' | 'article' | 'gallery' | 'contact'>(() => {
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search);
       const pageParam = params.get('page');
@@ -33,8 +31,6 @@ export default function App() {
       if (pageParam === 'article') return 'article';
       if (pageParam === 'gallery') return 'gallery';
       if (pageParam === 'contact') return 'contact';
-      if (pageParam === 'admin-login') return 'admin-login';
-      if (pageParam === 'admin-dashboard') return 'admin-dashboard';
     }
     return 'home';
   });
@@ -67,12 +63,6 @@ export default function App() {
     } else if (activePage === 'contact') {
       url.searchParams.set('page', 'contact');
       url.searchParams.delete('id');
-    } else if (activePage === 'admin-login') {
-      url.searchParams.set('page', 'admin-login');
-      url.searchParams.delete('id');
-    } else if (activePage === 'admin-dashboard') {
-      url.searchParams.set('page', 'admin-dashboard');
-      url.searchParams.delete('id');
     } else {
       url.searchParams.delete('page');
       url.searchParams.delete('id');
@@ -89,24 +79,6 @@ export default function App() {
     setActivePage('article');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
-  if (activePage === 'admin-login') {
-    return (
-      <AdminLogin
-        onLoginSuccess={() => setActivePage('admin-dashboard')}
-        onReturnHome={() => setActivePage('home')}
-      />
-    );
-  }
-
-  if (activePage === 'admin-dashboard') {
-    return (
-      <AdminDashboard
-        onLogout={() => setActivePage('admin-login')}
-        onReturnHome={() => setActivePage('home')}
-      />
-    );
-  }
 
   return (
     <div className="min-h-screen bg-[#f7f9fb] text-[#191c1e] flex flex-col font-sans selection:bg-[#dbe1ff] selection:text-[#004ac6]">
